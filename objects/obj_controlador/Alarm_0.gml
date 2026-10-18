@@ -1,0 +1,2 @@
+
+reacao_texto = ""
