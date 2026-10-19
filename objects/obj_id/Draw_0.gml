@@ -24,16 +24,16 @@ if(ampliar && image_xscale > escala * 0.6){
     var alt  = sprite_height
 
     //foto do documento
-    draw_sprite_ext(dono.cabeca, 0, x - 250, y + 30, image_xscale - 1.8, image_yscale - 1.8, 0, c_white, 1)
+    draw_sprite_ext(dono.cabeca, 0, x - 170, y + 40, image_xscale - 1.8, image_yscale - 1.8, 0, c_white, 1)
 
     draw_set_alpha(1)
     draw_set_color(c_black)
     draw_set_halign(fa_left)
     draw_set_valign(fa_top)
 
-    draw_text_transformed(x - _x, y - _y, "Nome: " + dono.nome, 2, 2, 0)
-    draw_text_transformed(x - _x, y, "Idade: " + string(dono.idade), 2, 2, 0)
-    draw_text_transformed(x - _x, y + _y, "CPF: "   + dono.cpf, 2, 2, 0)
+    draw_text_transformed(x - _x, y - _y, "Nome: " + dono.nome, 1, 1, 0)
+    draw_text_transformed(x - _x, y, "Idade: " + string(dono.idade), 1, 1, 0)
+    draw_text_transformed(x - _x, y + _y, "CPF: "   + dono.cpf, 1, 1, 0)
 
     draw_set_color(c_white)
 }
