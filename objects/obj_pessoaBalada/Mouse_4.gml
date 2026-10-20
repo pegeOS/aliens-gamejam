@@ -1,0 +1,2 @@
+
+global.selecionado = id

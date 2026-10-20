@@ -8,5 +8,5 @@ escuro = 0
 sprite_pequeno = sprite_index
 
 //texto na frente da sprite do id
-depth = -10000   
-escala = 7
+depth = -2  
+escala = 4.5
