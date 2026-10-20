@@ -6,9 +6,7 @@ global.dia = 1;
 global.indice_fila = 0;
 global.selecionado = noone
 
-function Pessoa(_nome, _idade, _cpf, _corpo, _cabeca, _sprBalada, _convite,  _alien, _revelacao, _comportamento) constructor {
-    
-    
+function Pessoa(_nome, _idade, _cpf, _corpo, _cabeca, _sprBalada, _convite,  _alien, _revelacao, _comportamento) constructor{
     nome = _nome
     idade = _idade
     cpf = _cpf

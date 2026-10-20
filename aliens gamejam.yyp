@@ -25,7 +25,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"aliens gamejam",
   "resources":[
@@ -33,11 +33,11 @@
     {"id":{"name":"obj_botao_cabine","path":"objects/obj_botao_cabine/obj_botao_cabine.yy",},},
     {"id":{"name":"obj_cabine_ui","path":"objects/obj_cabine_ui/obj_cabine_ui.yy",},},
     {"id":{"name":"obj_controlador","path":"objects/obj_controlador/obj_controlador.yy",},},
-    {"id":{"name":"obj_cria_pessoa","path":"objects/obj_cria_pessoa/obj_cria_pessoa.yy",},},
+    {"id":{"name":"obj_cria_pessoab","path":"objects/obj_cria_pessoab/obj_cria_pessoab.yy",},},
     {"id":{"name":"obj_id","path":"objects/obj_id/obj_id.yy",},},
     {"id":{"name":"obj_lista","path":"objects/obj_lista/obj_lista.yy",},},
     {"id":{"name":"obj_pessoa","path":"objects/obj_pessoa/obj_pessoa.yy",},},
-    {"id":{"name":"obj_pessoaBalada","path":"objects/obj_pessoaBalada/obj_pessoaBalada.yy",},},
+    {"id":{"name":"obj_pessoab","path":"objects/obj_pessoab/obj_pessoab.yy",},},
     {"id":{"name":"rm_balada","path":"rooms/rm_balada/rm_balada.yy",},},
     {"id":{"name":"rm_cabine","path":"rooms/rm_cabine/rm_cabine.yy",},},
     {"id":{"name":"rm_inicio","path":"rooms/rm_inicio/rm_inicio.yy",},},
