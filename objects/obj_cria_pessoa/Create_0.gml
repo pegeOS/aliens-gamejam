@@ -5,9 +5,10 @@
 for ( i = 0; i < array_length(global.balada); i++){
 		randomize()
 	
-		var _p = instance_create_layer(random_range( 100, 1200), random_range(100, 650), "Instances", obj_pessoab)
+		var _p = instance_create_layer(random_range( 100, 1200), random_range(100, 650), "Instances", obj_pessoaBalada)
 	
 		_p.info = global.balada[i]
+        _p.sprite_index = _p.info.sprBalada
 		
 		show_message(_p.info)
 }
