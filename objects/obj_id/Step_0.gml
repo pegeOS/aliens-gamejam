@@ -13,15 +13,14 @@ ignora_clique = false
 if(ampliar = false){
     image_xscale = lerp(image_xscale, 1, 0.1)
     image_yscale = image_xscale
-    x = lerp(x, 500, 0.1)
-    y = lerp(y, 590, 0.1)
+    x = lerp(x, 550, 0.1)
+    y = lerp(y, 650, 0.1)
     escuro = lerp(escuro, 0, 0.15)
     
     //lista de convidados
      with(obj_lista){
         
-        image_angle = lerp(image_angle, 90, 0.1)
-        x = lerp(x, 1530, 0.1)
+        y = lerp(y, 928 , 0.1)
     }
 }
 else{ //com zoom
@@ -29,12 +28,12 @@ else{ //com zoom
     image_xscale = lerp(image_xscale, escala, 0.1)
     image_yscale = image_xscale
     x = lerp(x, display_get_gui_width()/2 - 280, 0.1)
-    y = lerp(y, display_get_gui_height()/2 - 180, 0.1)
+    y = lerp(y, display_get_gui_height()/2 - 100 , 0.1)
     escuro = lerp(escuro, 0.6, 0.1)
     
     //lista de convidados
     with(obj_lista){
         image_angle = lerp(image_angle, 0, 0.1)
-        x = lerp(x, 1000, 0.1)
+        y = lerp(y, 352, 0.1)
     }
 }

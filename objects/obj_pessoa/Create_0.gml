@@ -10,8 +10,10 @@ x = -40
 
 moveu = false
 
-//criando RG
-rg = instance_create_layer(608, 576, "id", obj_id, { dono: pessoa });
+
+rg = instance_create_layer(608, 576, "id", obj_id, { dono: pessoa })
+convite = instance_create_layer(908, 576, "id", obj_convite, { dono: pessoa })
+
 
 
 //movimentação ensaboada
@@ -28,6 +30,7 @@ saida = function(lado){
         if(lado == "esquerda") speed = 5
         if(lado == "direita") speed = -5 
         if(instance_exists(rg)) instance_destroy(rg)
+		 if(instance_exists(convite)) instance_destroy(convite)
     }
       
 }
