@@ -10,5 +10,4 @@ if (mouse_check_button_pressed(mb_left) && position_meeting(mouse_x, mouse_y, id
 	
     // tanto Sim quanto Não limpa a seleção e some com os botões
     global.selecionado = noone
-    instance_destroy(obj_botaoExpulsar)
 }

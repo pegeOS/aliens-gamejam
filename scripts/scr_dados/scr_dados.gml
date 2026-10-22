@@ -68,6 +68,8 @@ function cadastra_pessoas() {
         "Esse ritmo é... interessante.",
         "Meus joelhos são normais."
     ]
+    
+    p = new 
 }
 
 

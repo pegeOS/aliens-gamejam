@@ -29,7 +29,7 @@ define_movimento = function(){
 	direction = irandom(359)
 	
 	//velocidade aleatoria
-	speed = random(2)
+	speed = random_range(0.8, 2)
     
 	//image_angle = direction
 }
