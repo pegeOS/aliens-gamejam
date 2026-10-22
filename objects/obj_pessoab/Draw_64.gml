@@ -13,10 +13,8 @@ if(id == global.selecionado){
     
     draw_sprite(spr_personagemClick, 0, x, y)
     draw_text_transformed(_id.x- 20, _id.y - 70, info.nome, 1.5, 1.5,0)
-	
-	draw_set_colour(c_red)
-	//pergunta embaixo da tela
-    draw_text_transformed(display_get_gui_width() /2 - 150,  display_get_gui_height() - 230,  "Expulsar " + string(info.nome) + "?", 2, 2, 0)
-	
-	draw_set_colour(c_white)
+    
+    
+    draw_text_transformed(obj_retangulo.x - 100, obj_retangulo.y - 60,  "Expulsar " + string(info.nome) + "?", 2, 2, 0)
+
 }

@@ -25,7 +25,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2026.0.0.16",
+    "IDEVersion":"2024.14.4.222",
   },
   "name":"aliens gamejam",
   "resources":[
@@ -40,6 +40,7 @@
     {"id":{"name":"obj_lista","path":"objects/obj_lista/obj_lista.yy",},},
     {"id":{"name":"obj_pessoa","path":"objects/obj_pessoa/obj_pessoa.yy",},},
     {"id":{"name":"obj_pessoab","path":"objects/obj_pessoab/obj_pessoab.yy",},},
+    {"id":{"name":"obj_retangulo","path":"objects/obj_retangulo/obj_retangulo.yy",},},
     {"id":{"name":"rm_balada","path":"rooms/rm_balada/rm_balada.yy",},},
     {"id":{"name":"rm_cabine","path":"rooms/rm_cabine/rm_cabine.yy",},},
     {"id":{"name":"rm_inicio","path":"rooms/rm_inicio/rm_inicio.yy",},},
@@ -59,6 +60,7 @@
     {"id":{"name":"spr_listaConvidados","path":"sprites/spr_listaConvidados/spr_listaConvidados.yy",},},
     {"id":{"name":"spr_personagem","path":"sprites/spr_personagem/spr_personagem.yy",},},
     {"id":{"name":"spr_personagemClick","path":"sprites/spr_personagemClick/spr_personagemClick.yy",},},
+    {"id":{"name":"spr_retangulo","path":"sprites/spr_retangulo/spr_retangulo.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
