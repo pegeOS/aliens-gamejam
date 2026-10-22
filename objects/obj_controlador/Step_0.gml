@@ -1,4 +1,12 @@
 
+//cria a transicao e destroi se ela terminar
+if (sq_transicao != noone && layer_sequence_exists("transicao", sq_transicao)) {
+    if (layer_sequence_is_finished(sq_transicao)) {
+        layer_sequence_destroy(sq_transicao)
+        sq_transicao = noone
+    }
+}
+
 if(pessoa_atual == undefined) exit
 if(falas_terminaram) exit
 

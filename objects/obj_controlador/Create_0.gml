@@ -12,6 +12,8 @@ falas_terminaram = false
 decidido = false   //vira true depois que o jogador liberou/expulsou
 reacao_texto = ""
 
+sq_transicao = noone
+
 carrega_falas = function(){
 
     indice_fala      = 0
@@ -38,9 +40,14 @@ cria_visitante = function() {
 
 pode_decidir = function(){
     if(pessoa_atual == undefined) return false
+	
     if(!falas_terminaram) return false
+	
     if(decidido) return false
-    if(instance_exists(obj_id) && obj_id.ampliar) return false //rg ta aberto
+	
+	 //rg ta aberto
+    if(instance_exists(obj_id) && obj_id.ampliar) return false 
+	
     return true
 }
 

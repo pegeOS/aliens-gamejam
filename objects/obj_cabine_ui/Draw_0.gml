@@ -20,18 +20,18 @@ else{
     _txt = p.nome + ": " + c.falas_atuais[c.indice_fala]
 }
 
-var _quebra = 320
+var _quebra = 250
 var _sep = 20
-var _margem = 30
+var _margem = 50
 // tamanho do balão
 var _w = string_width_ext(_txt, _sep, _quebra) + _margem * 2
 var _h = string_height_ext(_txt, _sep, _quebra) + _margem * 2
 // centro do balão
-var _centrox = obj_pessoa.x + 300
+var _centrox = obj_pessoa.x + 280
 var _centroy = obj_pessoa.y - 100
 
 draw_sprite_stretched(spr_balaoFala, vel_animacao, _centrox - _w / 2, _centroy - _h / 2, _w, _h)
-draw_text_ext(_centrox, _centroy, _txt, _sep, _quebra)
+draw_text_ext_transformed(_centrox, _centroy, _txt, _sep, _quebra, 1.2, 1.2, 0)
 
 draw_set_halign(-1)
 draw_set_valign(-1)
