@@ -190,6 +190,9 @@ p.fala_balada = [
 
 
 function monta_fila(_dia, _quantidade) {
+	
+	randomize()
+	
     var fixos = []
     var sorteaveis = []
 

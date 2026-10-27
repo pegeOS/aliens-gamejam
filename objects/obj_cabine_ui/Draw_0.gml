@@ -21,7 +21,7 @@ else{
 }
 
 var _quebra = 250
-var _sep = 20
+var _sep = 30
 var _margem = 50
 // tamanho do balão
 var _w = string_width_ext(_txt, _sep, _quebra) + _margem * 2
