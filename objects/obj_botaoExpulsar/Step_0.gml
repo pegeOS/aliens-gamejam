@@ -17,14 +17,24 @@ if (texto == "Sim") {
         // Registra a expulsão
         obj_controla_balada.chances++;
 
-        // Verifica se é alien
-        if (_alvo.info.alien == true) {
-            global.pontuacao += 100;
-        }
-        else {
-            global.pontuacao -= 50;
-        }
+if (_alvo.info.alien == true) {
 
+    global.pontuacao += 100;
+
+    show_debug_message(
+        _alvo.info.nome + " é ALIEN"
+    );
+
+}
+else {
+
+    global.pontuacao -= 50;
+
+    show_debug_message(
+        _alvo.info.nome + " é HUMANO"
+    );
+
+}
         _alvo.info.status = "expulso";
         _alvo.info.vezes_expulso++;
 
