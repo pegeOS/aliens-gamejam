@@ -2,7 +2,7 @@
 function cadastra_pessoas() {
 
     //humanos normais
-    var p = new Pessoa("Lucio", 18, "090.788.356-50", spr_p1, spr_p1, spr_p1, true, false, "nunca", "normal")
+    var p = new Pessoa("Lucio", 18, "090.788.356-50", spr_p1, spr_cabeca_p1, spr_p1, true, false, "nunca", "normal")
     
     p.fala_chegada = [
         "Boa noite! Vim pro baile.",

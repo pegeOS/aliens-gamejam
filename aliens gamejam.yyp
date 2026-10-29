@@ -66,6 +66,7 @@
     {"id":{"name":"spr_balaoFala","path":"sprites/spr_balaoFala/spr_balaoFala.yy",},},
     {"id":{"name":"spr_botao","path":"sprites/spr_botao/spr_botao.yy",},},
     {"id":{"name":"spr_botao2","path":"sprites/spr_botao2/spr_botao2.yy",},},
+    {"id":{"name":"spr_cabeca_p1","path":"sprites/spr_cabeca_p1/spr_cabeca_p1.yy",},},
     {"id":{"name":"spr_cabine","path":"sprites/spr_cabine/spr_cabine.yy",},},
     {"id":{"name":"spr_convite","path":"sprites/spr_convite/spr_convite.yy",},},
     {"id":{"name":"spr_conviteGrande","path":"sprites/spr_conviteGrande/spr_conviteGrande.yy",},},
