@@ -1,11 +1,11 @@
 
-image_xscale = 5.5
+image_xscale = 0.25
 image_yscale = image_xscale
 
 sprite_index = pessoa.corpo
 
 //posicao inicial
-y = 352
+y = 335
 x = -40
 
 moveu = false

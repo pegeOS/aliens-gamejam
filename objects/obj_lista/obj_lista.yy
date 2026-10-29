@@ -8,8 +8,8 @@
   "name":"obj_lista",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"itens",
+    "path":"folders/Objects/itens.yy",
   },
   "parentObjectId":null,
   "persistent":false,

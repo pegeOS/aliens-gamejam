@@ -2,7 +2,7 @@
 function cadastra_pessoas() {
 
     //humanos normais
-    var p = new Pessoa("Lucio", 18, "090.788.356-50", spr_personagem, spr_personagem, spr_personagem, true, false, "nunca", "normal")
+    var p = new Pessoa("Lucio", 18, "090.788.356-50", spr_p1, spr_p1, spr_p1, true, false, "nunca", "normal")
     
     p.fala_chegada = [
         "Boa noite! Vim pro baile.",
@@ -48,7 +48,7 @@ function cadastra_pessoas() {
     
     
     //alien que só entrega na balada
-    p = new Pessoa("Ze", 30, "222.222.222-22", spr_personagem, spr_personagem, spr_personagem, true, true, "balada", "dança errado")
+    p = new Pessoa("Ze", 30, "222.222.222-22", spr_p1, spr_p1, spr_personagem, true, true, "balada", "dança errado")
     p.dia_fixo = 2;   // aparece a partir do dia 2
     p.fala_chegada = [
         "Boa noite, tudo bem?",

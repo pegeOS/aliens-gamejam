@@ -10,8 +10,8 @@
   "name":"obj_botaoExpulsar",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"botao",
+    "path":"folders/Objects/botao.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -80,7 +80,8 @@ expulsar = function(){
     if (!pode_decidir()) return
     decidido = true
     reacao_texto = pessoa_atual.reacao_expulso
-
+	
+	pessoa_atual.corpo = asset_get_index(string(pessoa_atual.corpo) + "bravo")
     pessoa_atual.status = "expulso"
     pessoa_atual.vezes_expulso++
 

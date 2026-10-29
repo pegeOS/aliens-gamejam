@@ -11,8 +11,8 @@
   "name":"obj_pessoab",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"pessoa",
+    "path":"folders/Objects/pessoa.yy",
   },
   "parentObjectId":null,
   "persistent":false,
