@@ -1,4 +1,4 @@
-
+saindo = false;
 image_xscale = 0.25
 image_yscale = image_xscale
 
@@ -23,14 +23,19 @@ entrada = function(){
     
 }
 
-//ou vai pra esquerda ou pra direita dependendo do lado
-saida = function(lado){
-    
-    if(moveu){
-        if(lado == "esquerda") speed = 5
-        if(lado == "direita") speed = -5 
-        if(instance_exists(rg)) instance_destroy(rg)
-		 if(instance_exists(convite)) instance_destroy(convite)
+// Ou vai para esquerda ou direita dependendo do lado
+saida = function(lado) {
+
+    // Impede iniciar a saída mais de uma vez
+    if (saindo) return;
+
+    if (moveu) {
+        saindo = true;
+
+        if (lado == "esquerda") speed = 5;
+        if (lado == "direita") speed = -5;
+
+        if (instance_exists(rg)) instance_destroy(rg);
+        if (instance_exists(convite)) instance_destroy(convite);
     }
-      
 }

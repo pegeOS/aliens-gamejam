@@ -4,6 +4,7 @@
 cadastra_pessoas()
 
 //atributos iniciais
+aliens_perdidos = 0;
 pessoa_atual = undefined
 falas_atuais = []
 indice_fala = 0
@@ -11,9 +12,11 @@ tempo_fala = 0
 falas_terminaram = false
 decidido = false   //vira true depois que o jogador liberou/expulsou
 reacao_texto = ""
-
+erros_dia = 0;
 sq_transicao = noone
-
+resultado_dia = false;
+feedback_pontos = "";
+feedback_timer = 0;
 carrega_falas = function(){
 
     indice_fala      = 0
@@ -52,6 +55,9 @@ pode_decidir = function(){
 }
 
 iniciar_dia = function(){
+	erros_dia = 0;
+	aliens_perdidos = 0;
+	resultado_dia = false;
     global.balada = []
     monta_fila(global.dia, 8)
 
@@ -65,23 +71,47 @@ iniciar_dia = function(){
 }
 
 liberar = function(){
-    
-    if (!pode_decidir()) return
+	if (!pode_decidir()) return;
     decidido = true
     reacao_texto = pessoa_atual.reacao_liberado
 
+    if (pessoa_atual.alien == true) {
+        erros_dia++
+        global.pontuacao = max(0, global.pontuacao - 50)
+    } else {
+        global.pontuacao += 50
+    }
+if (pessoa_atual.alien == true) {
+    feedback_pontos = "-50";
+} else {
+    feedback_pontos = "+50";
+}
+
+feedback_timer = 90;
     pessoa_atual.status = "liberado"
     array_push(global.balada, pessoa_atual)
     obj_pessoa.saida("esquerda")
 }
 
 expulsar = function(){
-    
-    if (!pode_decidir()) return
+	if (!pode_decidir()) return;
     decidido = true
     reacao_texto = pessoa_atual.reacao_expulso
-	
-	pessoa_atual.corpo = asset_get_index(string(pessoa_atual.corpo) + "bravo")
+
+    if (pessoa_atual.alien == false) {
+        erros_dia++
+        global.pontuacao = max(0, global.pontuacao - 50)
+    } else {
+        global.pontuacao += 50
+    }
+if (pessoa_atual.alien == false) {
+    feedback_pontos = "-50";
+} else {
+    feedback_pontos = "+50";
+}
+
+feedback_timer = 90;
+    pessoa_atual.corpo = asset_get_index(string(pessoa_atual.corpo) + "bravo")
     pessoa_atual.status = "expulso"
     pessoa_atual.vezes_expulso++
 
@@ -91,13 +121,28 @@ expulsar = function(){
 //chamado pelo obj_pessoa quando ele sai da tela
 proxima_pessoa = function() {
     global.indice_fila++;
-    if(global.indice_fila < array_length(global.fila)){
+
+    if (global.indice_fila < array_length(global.fila)) {
         pessoa_atual = global.fila[global.indice_fila]
         carrega_falas()
         cria_visitante()
-    } 
-    else{
-        room_goto(rm_balada)
+    }
+    else {
+        aliens_perdidos = 0;
+
+        // Conta quantos aliens foram liberados
+        for (var i = 0; i < array_length(global.balada); i++) {
+            if (global.balada[i].alien == true) {
+                aliens_perdidos++;
+            }
+        }
+
+        // Bônus por não deixar nenhum alien entrar
+        if (aliens_perdidos == 0) {
+            global.pontuacao += 200;
+        }
+
+        resultado_dia = true;
     }
 }
 

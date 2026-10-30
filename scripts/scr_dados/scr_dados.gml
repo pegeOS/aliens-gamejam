@@ -1,73 +1,90 @@
 
 function cadastra_pessoas() {
 
-    //humanos normais
-    var p = new Pessoa("Lucio", 18, "090.788.356-50", spr_p1, spr_cabeca_p1, spr_p1, true, false, "nunca", "normal")
-    
-    p.fala_chegada = [
-        "Boa noite! Vim pro baile.",
-        "Meu convite está aqui, olha.",
-        "Pode conferir à vontade."
-    ]
-    p.fala_volta_liberado = [
-        "De novo por aqui! Ontem foi demais.",
-        "Posso entrar de novo, né?"
-    ]
-    p.fala_volta_expulso = [
-        "Foi um mal-entendido ontem, juro.",
-        "Eu sou gente, moço! Olha meu documento!"
-    ]
-    
-    p.reacao_liberado = "Valeu, chefe!"
-    p.reacao_expulso  = "Que absurdo!"
-    
-    p.fala_balada = [
-        "Esse rock é demais!",
-        "Alguém quer um milk-shake?"
-    ]
+
+// humanos normais
+var p = new Pessoa("Lucio", 18, "090.788.356-50", spr_p1, spr_cabeca_p1, spr_p1, true, false, "nunca", "normal")
+
+p.fala_chegada = [
+    "Hey, daddy-o! I'm here for the big dance!",
+    "Got my ticket right here, see?",
+    "Go ahead, check it out, chief."
+]
+
+p.fala_volta_liberado = [
+    "Well, look who's back! Last night's joint was swell!",
+    "I'm cool to come in again, right?"
+]
+
+p.fala_volta_expulso = [
+    "Aw, c'mon! It was just a misunderstanding, I swear!",
+    "I'm no alien, daddy-o! Check my ID!"
+]
+
+p.reacao_liberado = "Thanks a million, chief!"
+p.reacao_expulso  = "Aw, that's a real bummer!"
+
+p.fala_balada = [
+    "This rock 'n' roll is the bee's knees!",
+    "Anybody up for a malted milk?"
+]
+
 
     
+ 
     
-    
-    //alien 
-    p = new Pessoa("Marta", 25, "111.111.111-11", spr_personagem, spr_personagem, spr_personagem, false, true, "cabine", "normal") // sem convite
-    p.fala_chegada = [
-        "Saudações, terráqueo... quer dizer, boa noite.",
-        "Esqueci meu convite em casa.",
-        "Mas eu sou muito normal, pode acreditar."
-    ]
-    p.fala_volta_liberado = ["Saudações novamente"]
-    p.fala_volta_expulso  = ["Dessa vez estou com tudo certo. Provavelmente."]
-    p.reacao_liberado = "Excelente."
-    p.reacao_expulso  = "Isso não ficará assim."
-    p.fala_balada = ["Estou me divertindo como os humanos fazem."]
 
-    
-    
-    
-    
-    
-    //alien que só entrega na balada
-    p = new Pessoa("Ze", 30, "222.222.222-22", spr_p1, spr_p1, spr_personagem, true, true, "balada", "dança errado")
-    p.dia_fixo = 2;   // aparece a partir do dia 2
-    p.fala_chegada = [
-        "Boa noite, tudo bem?",
-        "Aqui está meu convite.",
-        "Tenho trinta anos e trabalho na fábrica."
-    ]
-    p.fala_volta_liberado = [
-        "Boa noite de novo. Tudo bem?",
-        "O mesmo convite, o mesmo eu."
-    ]
-    
-    p.reacao_liberado = "Obrigado, amigo."
-    p.reacao_expulso  = "Tudo bem... eu entendo."
-    
-    p.fala_balada = [
-        "Eu... gosto... de dançar.",
-        "Esse ritmo é... interessante.",
-        "Meus joelhos são normais."
-    ]
+// alien
+p = new Pessoa("Marta", 25, "111.111.111-11", spr_personagem, spr_personagem, spr_personagem, false, true, "cabine", "normal")
+
+p.fala_chegada = [
+    "Greetings, earthling... I mean, good evening!",
+    "I seem to have misplaced my invitation.",
+    "But I'm a regular gal, see? Nothing funny about me."
+]
+
+p.fala_volta_liberado = [
+    "Greetings once again, fellow human."
+]
+
+p.fala_volta_expulso = [
+    "This time, I have everything in order. Probably."
+]
+
+p.reacao_liberado = "Splendid. Simply splendid."
+p.reacao_expulso  = "You haven't heard the last of me."
+
+p.fala_balada = [
+    "I'm having a swell time, just like humans do."
+]
+
+
+
+// alien que só entrega na balada
+p = new Pessoa("Ze", 30, "222.222.222-22", spr_p1, spr_p1, spr_personagem, true, true, "balada", "dança errado")
+
+p.dia_fixo = 2;   // aparece a partir do dia 2
+
+p.fala_chegada = [
+    "Evenin', pal! How's it going?",
+    "Here's my ticket, nice and easy.",
+    "I'm thirty years old and work down at the factory, see?"
+]
+
+p.fala_volta_liberado = [
+    "Well, howdy again! Everything's just peachy!",
+    "Same ticket, same old me, daddy-o."
+]
+
+p.reacao_liberado = "Thanks, buddy! You're a real doll."
+p.reacao_expulso  = "Aw, gee... I understand, pal."
+
+p.fala_balada = [
+    "I... sure do... dig this dancing.",
+    "This beat is... pretty swell.",
+    "My knees are perfectly normal, see?"
+]
+
 	
 	p = new Pessoa("Joey", 28, "000.000.000-00", spr_personagem, spr_personagem, spr_personagem, true, false, "nunca", "normal")
     p.dia_fixo = 1;  

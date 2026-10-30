@@ -6,3 +6,11 @@
 	draw_text_transformed(100, 50, "Chances: " +  string(chances) + " / " + string(quant_aliens), 1, 1, 0 )
 	
 	draw_set_colour(c_white)
+
+	draw_set_color(c_white);
+
+draw_text(
+    100,
+    80,
+    "Score: " + string(global.pontuacao)
+);

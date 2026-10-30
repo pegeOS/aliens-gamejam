@@ -27,3 +27,10 @@ if (tempo_fala >= duracao) {
         falas_terminaram = true//acabou a última fala
     }
 }
+if (feedback_timer > 0) {
+    feedback_timer--;
+
+    if (feedback_timer <= 0) {
+        feedback_pontos = "";
+    }
+}
