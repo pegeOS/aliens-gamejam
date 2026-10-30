@@ -1,4 +1,4 @@
-# 👽 Aliens Gamejam
+# 🛸 Aliens Gamejam
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/pegeOS/aliens-gamejam?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/pegeOS/aliens-gamejam?style=for-the-badge)
@@ -62,6 +62,8 @@ O objetivo é sobreviver ao maior número possível de dias, tomar decisões cor
 - **GameMaker IDE**
 - **Git**
 - **GitHub**
+- **Krita**
+- **Libresprite**
 
 ---
 
@@ -113,14 +115,70 @@ Sobreviva aos dias, administre suas decisões e tente manter a balada livre de a
 </div>
 
 ---
-
 ## 👨‍💻 Equipe do Projeto
 
-<div align="center">
-
-<!-- Adicione os integrantes e seus respectivos perfis do GitHub -->
-
-</div>
+<table>
+<tr>
+<td align="center" width="20%">
+<a href="https://github.com/pegeOS">
+<img src="https://github.com/pegeOS.png" width="100px;" alt="Pedro Gabriel"/><br>
+<strong>Pedro Gabriel</strong>
+</a>
+</td>
+<td align="center" width="20%">
+<a href="https://github.com/AngeloMatos08">
+<img src="https://github.com/AngeloMatos08.png" width="100px;" alt="Ângelo Matos"/><br>
+<strong>Ângelo Matos</strong>
+</a>
+</td>
+<td align="center" width="20%">
+<a href="https://github.com/torilocode">
+<img src="https://github.com/torilocode.png" width="100px;" alt="Henk Narciso"/><br>
+<strong>Henk Narciso</strong>
+</a>
+</td>
+<td align="center" width="20%">
+<img src="https://placehold.co/100x100?text=Julio" width="100px;" alt="Julio"/><br>
+<strong>Julio</strong>
+</td>
+<td align="center" width="20%">
+<img src="https://placehold.co/100x100?text=Isabella" width="100px;" alt="Isabella"/><br>
+<strong>Isabella</strong>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top">
+<br>
+<sub>🎮 <strong>Game Design e Game Dev</strong></sub>
+<br><br>
+<sub>Concepção e desenvolvimento das principais mecânicas do jogo.</sub>
+</td>
+<td align="center" valign="top">
+<br>
+<sub>💻 <strong>Game Dev</strong></sub>
+<br><br>
+<sub>Implementação dos sistemas, mecânicas e lógica do jogo.</sub>
+</td>
+<td align="center" valign="top">
+<br>
+<sub>♫ <strong>Game Design e Sound Design</strong></sub>
+<br><br>
+<sub>Desenvolvimento de fases e produção da trilha sonora.</sub>
+</td>
+<td align="center" valign="top">
+<br>
+<sub>🎨 <strong>Art & Creative Design</strong></sub>
+<br><br>
+<sub>Criação das artes e referências visuais da época retratada.</sub>
+</td>
+<td align="center" valign="top">
+<br>
+<sub>🎨 <strong>Art & Creative Design</strong></sub>
+<br><br>
+<sub>Criação das artes e referências visuais da época retratada.</sub>
+</td>
+</tr>
+</table>
 
 ---
 
