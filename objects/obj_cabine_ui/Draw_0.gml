@@ -1,7 +1,9 @@
 
 
-var c = obj_controlador
-if (c.pessoa_atual == undefined)exit
+var c = instance_find(obj_controlador, 0);
+
+if (!instance_exists(c)) exit;
+if (c.pessoa_atual == undefined) exit;
 
 //nao mostra a fala se a pessoa ta se mexendo
 if(!instance_exists(obj_pessoa) || !obj_pessoa.moveu) exit

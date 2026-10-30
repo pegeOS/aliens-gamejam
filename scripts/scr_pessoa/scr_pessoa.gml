@@ -4,6 +4,9 @@ global.fila = []
 global.balada  = []
 global.dia = 1;
 global.indice_fila = 0;
+if (!variable_global_exists("vidas")) {
+    global.vidas = 3;
+}
 global.selecionado = noone
 global.pontuacao = 0
 function Pessoa(_nome, _idade, _cpf, _corpo, _cabeca, _sprBalada, _convite,  _alien, _revelacao, _comportamento) constructor{

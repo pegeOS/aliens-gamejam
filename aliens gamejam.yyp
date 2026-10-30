@@ -52,6 +52,7 @@
     {"id":{"name":"obj_lista","path":"objects/obj_lista/obj_lista.yy",},},
     {"id":{"name":"obj_pessoa","path":"objects/obj_pessoa/obj_pessoa.yy",},},
     {"id":{"name":"obj_pessoab","path":"objects/obj_pessoab/obj_pessoab.yy",},},
+    {"id":{"name":"obj_resultado_balada","path":"objects/obj_resultado_balada/obj_resultado_balada.yy",},},
     {"id":{"name":"obj_retangulo","path":"objects/obj_retangulo/obj_retangulo.yy",},},
     {"id":{"name":"obj_textos_cabine","path":"objects/obj_textos_cabine/obj_textos_cabine.yy",},},
     {"id":{"name":"rm_balada","path":"rooms/rm_balada/rm_balada.yy",},},
