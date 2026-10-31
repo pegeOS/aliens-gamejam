@@ -4,7 +4,7 @@ quant_aliens = 0;
 chances = 0;
 global.aliens = [];
 fim_de_jogo = false;
-sprites = [spr_personagem];
+sprites = [spr_p2];
 
 nomes = [
     "Peter", "Cynthia", "Artur", "Brad", "Frank",

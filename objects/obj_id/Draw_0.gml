@@ -1,3 +1,4 @@
+
 var _x = 25
 var _y = 75
 
@@ -16,16 +17,16 @@ draw_self()
 if(ampliar && image_xscale > escala * 0.6){
 
     if (dono == undefined) exit
-
     var esq  = x - sprite_xoffset * image_xscale
     var topo = y - sprite_yoffset * image_yscale
     var larg = sprite_width
     var alt  = sprite_height
 
-    // Foto do documento
+    //fotinha
     if (sprite_exists(dono.cabeca)) {
-        draw_sprite_ext(dono.cabeca, 0, x - 255, y -15,0.15,0.15,0,c_white, 1)
+        draw_sprite_ext(dono.cabeca, 0, x - 220, y,0.15,0.15,0,c_white, 1)
     }
+	
     draw_set_alpha(1)
     draw_set_color(c_black) 
     draw_set_valign(fa_top)

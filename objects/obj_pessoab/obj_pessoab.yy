@@ -28,13 +28,17 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"corpo","filters":[
+        "GMSprite",
+      ],"listItems":[],"multiselect":false,"name":"corpo","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_personagem",
-    "path":"sprites/spr_personagem/spr_personagem.yy",
+    "name":"spr_pessoaBalada",
+    "path":"sprites/spr_pessoaBalada/spr_pessoaBalada.yy",
   },
   "spriteMaskId":null,
   "visible":true,

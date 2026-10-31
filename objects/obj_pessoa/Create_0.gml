@@ -12,7 +12,14 @@ moveu = false
 
 
 rg = instance_create_layer(608, 576, "id", obj_id, { dono: pessoa })
-convite = instance_create_layer(908, 576, "id", obj_convite, { dono: pessoa })
+
+//nao cria convite se nao tiver
+if(pessoa.convite){
+	convite = instance_create_layer(908, 576, "id", obj_convite, { dono: pessoa })
+}
+else{
+	convite = noone
+}
 
 
 

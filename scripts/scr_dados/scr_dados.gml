@@ -3,7 +3,7 @@ function cadastra_pessoas() {
 
 
 // humanos normais
-var p = new Pessoa("Lucio", 18, "090.788.356-50", spr_p1, spr_cabeca_p1, spr_p1, true, false, "nunca", "normal")
+var p = new Pessoa("Lucio", 18, "090.788.356-50", spr_p1, spr_cabeca_p1, true, false, "nunca", "normal")
 
 p.fala_chegada = [
     "Hey, daddy-o! I'm here for the big dance!",
@@ -35,7 +35,7 @@ p.fala_balada = [
     
 
 // alien
-p = new Pessoa("Marta", 25, "111.111.111-11", spr_personagem, spr_personagem, spr_personagem, false, true, "cabine", "normal")
+p = new Pessoa("Marta", 25, "111.111.111-11", spr_p2, spr_p2, false, true, "cabine", "normal")
 
 p.fala_chegada = [
     "Greetings, earthling... I mean, good evening!",
@@ -61,7 +61,7 @@ p.fala_balada = [
 
 
 // alien que só entrega na balada
-p = new Pessoa("Ze", 30, "222.222.222-22", spr_p1, spr_p1, spr_personagem, true, true, "balada", "dança errado")
+p = new Pessoa("Ze", 30, "222.222.222-22", spr_p1, spr_p1, true, true, "balada", "dança errado")
 
 p.dia_fixo = 2;   // aparece a partir do dia 2
 
@@ -86,7 +86,7 @@ p.fala_balada = [
 ]
 
 	
-	p = new Pessoa("Joey", 28, "000.000.000-00", spr_personagem, spr_personagem, spr_personagem, true, false, "nunca", "normal")
+	p = new Pessoa("Joey", 28, "000.000.000-00", spr_p2, spr_p2, true, false, "nunca", "normal")
     p.dia_fixo = 1;  
     p.fala_chegada = [
         "Hey dude, how are you doing?",
@@ -107,7 +107,7 @@ p.fala_balada = [
         "Come on, snake! Let's rattle!."
     ]
 
-p = new Pessoa("Betty", 21, "111.222.333-44", spr_personagem, spr_personagem, spr_personagem, true, false, "nunca", "normal");
+p = new Pessoa("Betty", 21, "111.222.333-44", spr_p2, spr_p2, true, false, "nunca", "normal");
 p.dia_fixo = 1;  
 p.fala_chegada = [
     "What a gas! I heard this place is real gone!",
@@ -127,7 +127,7 @@ p.fala_balada = [
 ];
 
 
-p = new Pessoa("Johnny", 24, "555.666.777-88", spr_personagem, spr_personagem, spr_personagem, true, false, "nunca","normal")
+p = new Pessoa("Johnny", 24, "555.666.777-88", spr_p2, spr_p2, true, false, "nunca","normal")
 p.dia_fixo = 2;  
 p.fala_chegada = [
     "Hey daddy-o, check out the most cool cat in town.",
@@ -146,7 +146,7 @@ p.fala_balada = [
     "Just spreading a little apple butter, you dig?"
 ];
 
-p = new Pessoa("Arthur", 22, "999.888.777-66", spr_personagem, spr_personagem, spr_personagem, false, true, "cabine", "normal")
+p = new Pessoa("Arthur", 22, "999.888.777-66", spr_p2, spr_p2, false, true, "cabine", "normal")
 p.dia_fixo = 3;  
 p.fala_chegada = [
     "Is this the shindig? It looks like Antsville in there...",
@@ -166,7 +166,7 @@ p.fala_balada = [
 ];
 
 
-p = new Pessoa("Peggy", 23, "333.444.555-22", spr_personagem, spr_personagem, spr_personagem, false, false, "nunca", "normal");
+p = new Pessoa("Peggy", 23, "333.444.555-22", spr_p2, spr_p2, false, false, "nunca", "normal");
 p.dia_fixo = 4;  
 p.fala_chegada = [
     "Hope this bash is better than the last one.",
@@ -185,7 +185,7 @@ p.fala_balada = [
     "Too many neckers on the floor tonight, get a room!"
 ];
 
-p = new Pessoa("Duke", 26, "777.111.222-33", spr_personagem, spr_personagem, spr_personagem, false,true,"cabine", "normal")
+p = new Pessoa("Duke", 26, "777.111.222-33", spr_p2, spr_p2, false,true,"cabine", "normal")
 p.dia_fixo = 5;  
 p.fala_chegada = [
     "Step aside, square. Duke has arrived.",
