@@ -57,7 +57,6 @@
     {"id":{"name":"obj_textos_cabine","path":"objects/obj_textos_cabine/obj_textos_cabine.yy",},},
     {"id":{"name":"rm_balada","path":"rooms/rm_balada/rm_balada.yy",},},
     {"id":{"name":"rm_cabine","path":"rooms/rm_cabine/rm_cabine.yy",},},
-    {"id":{"name":"rm_inicio","path":"rooms/rm_inicio/rm_inicio.yy",},},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"id":{"name":"scr_dados","path":"scripts/scr_dados/scr_dados.yy",},},
     {"id":{"name":"scr_dialogo","path":"scripts/scr_dialogo/scr_dialogo.yy",},},
@@ -90,7 +89,6 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
-    {"roomId":{"name":"rm_inicio","path":"rooms/rm_inicio/rm_inicio.yy",},},
     {"roomId":{"name":"rm_cabine","path":"rooms/rm_cabine/rm_cabine.yy",},},
     {"roomId":{"name":"rm_balada","path":"rooms/rm_balada/rm_balada.yy",},},
   ],
