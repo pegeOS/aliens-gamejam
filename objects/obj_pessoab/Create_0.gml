@@ -1,20 +1,19 @@
 info = noone
 
 //atributos de move
-tempo_min	= 1
+tempo_min = 1
 tempo_max	= 2
-alarme		= room_speed * random_range(tempo_min, tempo_max)
-
+alarme = room_speed * random_range(tempo_min, tempo_max)
 
 //metodo de nao sair da room
 ficar_room = function(){
 
-	if(x - sprite_width/2 <= 100 or x + sprite_width/2 > room_width - 100){
+	if(x - sprite_width/2 <= 120 or x + sprite_width/2 > room_width - 120){
 		//inverter a velocidade horizontal
 		hspeed = hspeed * -1
 	}
 	
-	if(y - sprite_height/2 <= 100 or y + sprite_height/2 >= room_height - 100){
+	if(y - sprite_height/2 <= 170 or y + sprite_height/2 >= room_height - 170){
 		//inverter a velocidade vertical
 		vspeed = vspeed * -1
 	}
@@ -46,5 +45,4 @@ muda_direcao = function(){
 		
 		alarme = room_speed * random_range(tempo_min, tempo_max)
 	}
-
 }

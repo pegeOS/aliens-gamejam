@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_personagem",
-    "path":"sprites/spr_personagem/spr_personagem.yy",
+    "name":"spr_p2",
+    "path":"sprites/spr_p2/spr_p2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

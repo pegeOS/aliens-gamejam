@@ -1,9 +1,5 @@
 
-cadastra_pessoas();
-
-// =====================================
-// INICIALIZAÇÃO GLOBAL
-// =====================================
+cadastra_pessoas()
 
 if (!variable_global_exists("dia")) {
     global.dia = 1;
