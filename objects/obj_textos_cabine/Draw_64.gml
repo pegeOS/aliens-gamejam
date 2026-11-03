@@ -70,7 +70,7 @@ if (obj_controlador.feedback_timer > 0) {
         draw_set_colour(c_red);
     }
 
-    draw_text(700, 160, obj_controlador.feedback_pontos);
+    draw_text_transformed(obj_pontuacao.x, obj_pontuacao.y - 70, obj_controlador.feedback_pontos, 0.5, 0.5, 0)
 }
 
 

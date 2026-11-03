@@ -14,6 +14,7 @@
     {"name":"inst_303B0B04","path":"rooms/rm_cabine/rm_cabine.yy",},
     {"name":"inst_49AAAB5D","path":"rooms/rm_cabine/rm_cabine.yy",},
     {"name":"inst_6B207F95","path":"rooms/rm_cabine/rm_cabine.yy",},
+    {"name":"inst_1EE7C54C","path":"rooms/rm_cabine/rm_cabine.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -26,6 +27,7 @@
       ],"layers":[],"name":"btcontinuar","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"id","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_4D8CA581","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4D8CA581","objectId":{"name":"obj_lista","path":"objects/obj_lista/obj_lista.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":992.0,"y":928.0,},
+        {"$GMRInstance":"v4","%Name":"inst_1EE7C54C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1EE7C54C","objectId":{"name":"obj_pontuacao","path":"objects/obj_pontuacao/obj_pontuacao.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.2708333,"scaleY":0.6164384,"x":104.5,"y":188.0,},
       ],"layers":[],"name":"id","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"textos","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_555BE25","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_555BE25","objectId":{"name":"obj_textos_cabine","path":"objects/obj_textos_cabine/obj_textos_cabine.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1344.0,"y":0.0,},
