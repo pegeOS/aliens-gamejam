@@ -63,6 +63,7 @@
     {"id":{"name":"scr_dialogo","path":"scripts/scr_dialogo/scr_dialogo.yy",},},
     {"id":{"name":"scr_pessoa","path":"scripts/scr_pessoa/scr_pessoa.yy",},},
     {"id":{"name":"sq_transicaoBalada","path":"sequences/sq_transicaoBalada/sq_transicaoBalada.yy",},},
+    {"id":{"name":"snd_rubens","path":"sounds/snd_rubens/snd_rubens.yy",},},
     {"id":{"name":"spr_balada","path":"sprites/spr_balada/spr_balada.yy",},},
     {"id":{"name":"spr_balaoFala","path":"sprites/spr_balaoFala/spr_balaoFala.yy",},},
     {"id":{"name":"spr_botao","path":"sprites/spr_botao/spr_botao.yy",},},
