@@ -1,4 +1,10 @@
 
+// Solicita landscape ao iniciar no Android; a opção do target também gera
+// o manifesto sem orientações portrait.
+if (os_type == os_android) {
+    os_set_orientation_lock(true, false);
+}
+
 cadastra_pessoas()
 
 if (!variable_global_exists("dia")) {
