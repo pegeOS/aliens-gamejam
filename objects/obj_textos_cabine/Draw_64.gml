@@ -76,9 +76,9 @@ if(obj_controlador.resultado_dia){
         draw_text(700, 410, "You have indentified all aliens!!")
     }
     else{
-        draw_text(700, 350, "EXPEDIENTE ENCERRADO")
+        draw_text(700, 350, "SHIFT'S OVER")
         draw_set_font(fnt_marketdeco)
-        draw_text(700, 410, "Algumas pessoas foram classificadas incorretamente.")
+        draw_text(700, 410, "Some guests entered illegally.")
     }
 
     draw_set_colour(c_white)

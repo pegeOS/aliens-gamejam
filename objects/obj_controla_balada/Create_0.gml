@@ -100,10 +100,10 @@ finalizar_balada = function() {
 
     // Mensagem do resultado
     if (aliens_restantes == 0) {
-        mensagem_resultado = "BALADA SOB CONTROLE!";
+        mensagem_resultado = "PARTY UNDER CONTROL!";
     }
     else {
-        mensagem_resultado = string(aliens_restantes) + " ALIEN(S) ESCAPARAM!";
+        mensagem_resultado = string(aliens_restantes) + "ALIENS ESCAPED!";
     }
 
     show_debug_message("ALIENS RESTANTES: " + string(aliens_restantes));
