@@ -38,7 +38,7 @@ if (!_controle.resultado_balada) exit
 var _centro_x = display_get_gui_width() / 2
 var _centro_y = display_get_gui_height() / 2
 
-var _texto_botao = _controle.fim_de_jogo ? "VOLTAR AO MENU": "CONTINUAR"
+var _texto_botao = _controle.fim_de_jogo ? "BACK TO MENU" : "CONTINUE"
 
 //fundo escuro
 draw_set_alpha(0.8)
@@ -59,9 +59,9 @@ draw_set_valign(fa_middle)
 draw_text_transformed( _centro_x, 150, _controle.fim_de_jogo ? "GAME OVER" : _controle.mensagem_resultado, 2, 2, 0)
 
 //infoinfo
-draw_text_transformed(_centro_x,230,"ALIENS RESTANTES: " + string(_controle.aliens_restantes),1.3, 1.3, 0)
-draw_text_transformed(_centro_x, 280, "VIDAS PERDIDAS: " + string(_controle.vidas_perdidas), 1.3, 1.3, 0)
-draw_text_transformed( _centro_x, 330, "VIDAS: " + string(global.vidas), 1.3, 1.3, 0)
+draw_text_transformed(_centro_x,230,"ALIENS LEFT: " + string(_controle.aliens_restantes),1.3, 1.3, 0)
+draw_text_transformed(_centro_x, 280, "LOST LIFES: " + string(_controle.vidas_perdidas), 1.3, 1.3, 0)
+draw_text_transformed( _centro_x, 330, "LIFES: " + string(global.vidas), 1.3, 1.3, 0)
 
 //fundo do botão
 draw_set_colour(make_colour_rgb(45, 30, 35))
