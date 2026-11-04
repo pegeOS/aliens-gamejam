@@ -138,7 +138,8 @@ Sobreviva aos dias, administre suas decisões e tente manter a balada livre de a
 </a>
 </td>
 <td align="center" width="20%">
-<img src="https://placehold.co/100x100?text=Julio" width="100px;" alt="Julio"/><br>
+<a href="https://github.com/GDevXyslet">
+<img src="https://github.com/GDevXyslet.png" width="100px;" alt="Julio"/><br>
 <strong>Julio</strong>
 </td>
 <td align="center" width="20%">
