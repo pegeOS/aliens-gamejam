@@ -1,4 +1,10 @@
 info = noone
+decorativo = false
+danca_inicializada = false
+estilo_danca = "normal"
+fase_danca = random(360)
+deslocamento_danca = 0
+deslocamento_anterior = 0
 
 //atributos de move
 tempo_min = 1
@@ -24,6 +30,11 @@ ficar_room = function(){
 }
 
 define_movimento = function(){
+	if (estilo_danca == "still") {
+		direction = irandom(359)
+		speed = random_range(0.35, 0.75)
+		return
+	}
 
 	direction = irandom(359)
 	

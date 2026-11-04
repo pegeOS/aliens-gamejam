@@ -8,21 +8,11 @@ if (_emcima) {
 
     if (_clicou) {
 
-        // Reinicia os dados da partida
-        global.dia = 1;
-        global.vidas = 3;
-        global.pontuacao = 0;
-
-        global.fila = [];
-        global.balada = [];
-        global.aliens = [];
-        global.indice_fila = 0;
-
         // Prepara o primeiro dia
         var _controle = instance_find(obj_controlador, 0);
 
         if (instance_exists(_controle)) {
-            _controle.iniciar_dia();
+            _controle.nova_partida();
             room_goto(rm_cabine);
         }
         else {

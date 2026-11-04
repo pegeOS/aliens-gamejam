@@ -29,7 +29,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"cor","filters":[],"listItems":[],"multiselect":false,"name":"cor","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FF006600","varType":7,},
-    {"$GMObjectProperty":"v2","%Name":"texto","filters":[],"listItems":[],"multiselect":false,"name":"texto","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Sim","varType":2,},
+    {"$GMObjectProperty":"v2","%Name":"texto","filters":[],"listItems":[],"multiselect":false,"name":"texto","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Yes","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

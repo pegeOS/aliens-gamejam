@@ -15,6 +15,7 @@ nomes = [
 resultado_balada = false;
 aliens_restantes = 0;
 vidas_perdidas = 0;
+global.balada_decorativos = [];
 
 show_debug_message("CONTROLADOR INICIADO");
 show_debug_message("Resultado inicial: " + string(resultado_balada));
@@ -30,26 +31,27 @@ for (var i = 0; i < array_length(global.balada); i++) {
 
 show_debug_message("ALIENS QUE ENTRARAM: " + string(quant_aliens));
 
-// CRIANDO NPCs PARA COMPLETAR A BALADA
-while (array_length(global.balada) < 15) {
+// CRIANDO NPCs VISUAIS SEM INCLUIR NA LISTA DE PARTICIPANTES
+while (
+    array_length(global.balada_decorativos) < 6
+    && array_length(global.balada) + array_length(global.balada_decorativos) < 12
+) {
 
     nome_random = irandom(array_length(nomes) - 1);
     sprite_random = irandom(array_length(sprites) - 1);
+    var _numero_convidado = array_length(global.balada_decorativos) + 1;
+    var _sprite_convidado = sprites[sprite_random];
 
-    var _p = new Pessoa(
-        nomes[nome_random],
-        18,
-        "090.788.356-50",
-        sprites[sprite_random],
-        sprites[sprite_random],
-        sprites[sprite_random],
-        true,
-        false,
-        "nunca",
-        "normal"
-    );
-
-    array_push(global.balada, _p);
+    array_push(global.balada_decorativos, {
+        nome: nomes[nome_random],
+        idade: irandom_range(18, 50),
+        cpf: "GUEST-" + string(_numero_convidado),
+        corpo: _sprite_convidado,
+        cabeca: _sprite_convidado,
+        comportamento: "Just enjoying the music.",
+        estilo_danca: choose("normal", "step", "odd", "still"),
+        decorativo: true
+    });
     array_delete(nomes, nome_random, 1);
 }
 
@@ -63,6 +65,13 @@ finalizar_balada = function() {
     show_debug_message("Chances: " + string(chances));
 
     if (resultado_balada) return;
+
+    var _controlador = instance_find(obj_controlador, 0);
+    if (instance_exists(_controlador) && _controlador.venceu) {
+        resultado_balada = true;
+        fim_de_jogo = false;
+        return;
+    }
 
     // Só finaliza quando todas as tentativas forem utilizadas
     if (chances < quant_aliens) return;

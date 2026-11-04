@@ -2,6 +2,35 @@ draw_set_font(fnt_marketdeco);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_alpha(1);
+
+if (obj_controlador.venceu) {
+    var _win_x = display_get_gui_width() / 2;
+    var _win_y = display_get_gui_height() / 2;
+
+    draw_set_alpha(0.86);
+    draw_set_colour(c_black);
+    draw_rectangle(0, 0, display_get_gui_width(), display_get_gui_height(), false);
+
+    draw_set_alpha(1);
+    draw_set_colour(make_colour_rgb(245, 214, 137));
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+    draw_set_font(fnt_limelight);
+    draw_text_transformed(_win_x, _win_y - 90, "CONGRATULATIONS!", 2, 2, 0);
+    draw_set_font(fnt_marketdeco);
+    draw_text_transformed(_win_x, _win_y - 35, "YOU'VE REACHED 1,000 POINTS!", 1.4, 1.4, 0);
+
+    draw_set_colour(make_colour_rgb(74, 30, 35));
+    draw_rectangle(_win_x - 190, _win_y + 110, _win_x + 190, _win_y + 175, false);
+    draw_set_colour(c_white);
+    draw_rectangle(_win_x - 190, _win_y + 110, _win_x + 190, _win_y + 175, true);
+    draw_text_transformed(_win_x, _win_y + 142, "BACK TO MENU", 1.3, 1.3, 0);
+
+    draw_set_colour(c_white);
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_top);
+    draw_set_alpha(1);
+}
 draw_set_colour(c_white);
 draw_set_halign(fa_center)
 draw_set_valign(fa_middle)

@@ -1,20 +1,24 @@
-var _emcima = position_meeting(mouse_x, mouse_y, id);
+var _emcima = point_in_rectangle(mouse_x, mouse_y, x - 62, y - 30, x + 62, y + 30);
 var _clicou = mouse_check_button_pressed(mb_left);
+var _controlador = instance_find(obj_controlador, 0);
+
+if (instance_exists(_controlador) && _controlador.venceu) exit;
+if (!visible) exit;
 
 if (_emcima) {
-    image_xscale = 1.4;
-    image_yscale = 0.5;
+    image_xscale = 0.72;
+    image_yscale = 0.29;
 
     if (_clicou) {
 
-        if (texto == "Sim") {
+        if (texto == "Yes") {
 
             var _alvo = global.selecionado;
 
             // Verifica se ainda existem tentativas
             if (obj_controla_balada.chances < obj_controla_balada.quant_aliens) {
 
-                if (instance_exists(_alvo)) {
+                if (instance_exists(_alvo) && !_alvo.decorativo) {
 
                     // Registra a tentativa
                     obj_controla_balada.chances++;
@@ -43,6 +47,8 @@ if (_emcima) {
 
                     instance_destroy(_alvo);
 
+                    if (instance_exists(_controlador)) _controlador.verifica_vitoria();
+
                     with (obj_controla_balada) {
     finalizar_balada();
 }
@@ -55,8 +61,8 @@ if (_emcima) {
     }
 }
 else {
-    image_xscale = 1.2;
-    image_yscale = 0.4;
+    image_xscale = 0.66;
+    image_yscale = 0.25;
 }
 
 // Depuração

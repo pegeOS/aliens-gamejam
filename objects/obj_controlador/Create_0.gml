@@ -35,6 +35,16 @@ sq_transicao = noone;
 resultado_dia = false;
 feedback_pontos = "";
 feedback_timer = 0;
+venceu = false;
+
+verifica_vitoria = function() {
+    if (!venceu && global.pontuacao >= 1000) {
+        venceu = true;
+        global.selecionado = noone;
+    }
+
+    return venceu;
+};
 
 // =====================================
 // DIÁLOGOS
@@ -78,6 +88,7 @@ cria_visitante = function() {
 // =====================================
 
 pode_decidir = function() {
+    if (venceu) return false;
     if (pessoa_atual == undefined) return false;
     if (!falas_terminaram) return false;
     if (decidido) return false;
@@ -116,6 +127,46 @@ iniciar_dia = function() {
 };
 
 // =====================================
+// NOVA PARTIDA
+// =====================================
+
+nova_partida = function() {
+    venceu = false;
+    global.dia = 1;
+    global.vidas = 3;
+    global.pontuacao = 0;
+    global.fila = [];
+    global.balada = [];
+    global.aliens = [];
+    global.balada_decorativos = [];
+    global.indice_fila = 0;
+    global.selecionado = noone;
+
+    for (var i = 0; i < array_length(global.pessoas); i++) {
+        var _p = global.pessoas[i];
+        _p.status = _p.status_inicial;
+        _p.vezes_expulso = _p.vezes_expulso_inicial;
+        _p.corpo = _p.corpo_original;
+    }
+
+    aliens_perdidos = 0;
+    pessoa_atual = undefined;
+    falas_atuais = [];
+    indice_fala = 0;
+    tempo_fala = 0;
+    falas_terminaram = false;
+    decidido = false;
+    reacao_texto = "";
+    erros_dia = 0;
+    sq_transicao = noone;
+    resultado_dia = false;
+    feedback_pontos = "";
+    feedback_timer = 0;
+
+    iniciar_dia();
+};
+
+// =====================================
 // LIBERAR
 // =====================================
 
@@ -140,6 +191,7 @@ liberar = function() {
 
     array_push(global.balada, pessoa_atual);
     obj_pessoa.saida("esquerda");
+    verifica_vitoria();
 };
 
 // =====================================
@@ -172,6 +224,7 @@ expulsar = function() {
     pessoa_atual.vezes_expulso++;
 
     obj_pessoa.saida("direita");
+    verifica_vitoria();
 };
 
 // =====================================
@@ -179,6 +232,8 @@ expulsar = function() {
 // =====================================
 
 proxima_pessoa = function() {
+    if (venceu) return;
+
     global.indice_fila++;
 
     if (global.indice_fila < array_length(global.fila)) {
@@ -201,6 +256,7 @@ proxima_pessoa = function() {
         }
 
         resultado_dia = true;
+        verifica_vitoria();
     }
 };
 
@@ -209,6 +265,8 @@ proxima_pessoa = function() {
 // =====================================
 
 fim_do_dia = function() {
+    if (venceu) return;
+
     global.dia++;
 
     iniciar_dia();

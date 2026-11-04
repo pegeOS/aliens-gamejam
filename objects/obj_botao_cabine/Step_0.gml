@@ -5,6 +5,11 @@ var _c = instance_find(obj_controlador, 0);
 if (!instance_exists(_c)) {
     exit;
 }
+
+if (_c.venceu) {
+    visible = false;
+    exit;
+}
 // NOVOS BOTÕES DO ENCERRAMENTO
 if (variable_instance_exists(id, "acao")) {
 
@@ -63,10 +68,10 @@ else {
         image_yscale = 0.7;
 
         if (_clicou) {
-            if (texto == "Liberar") {
+            if (texto == "Admit") {
                 _c.liberar();
             }
-            else if (texto == "Expulsar") {
+            else if (texto == "Reject") {
                 _c.expulsar();
             }
         }

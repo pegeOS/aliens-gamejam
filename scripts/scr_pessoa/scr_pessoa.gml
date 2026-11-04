@@ -14,14 +14,18 @@ function Pessoa(_nome, _idade, _cpf, _corpo, _cabeca, _convite,  _alien, _revela
     idade = _idade
     cpf = _cpf
     corpo = _corpo
+    corpo_original = _corpo
     cabeca = _cabeca
     convite = _convite
     alien = _alien
     revelacao = _revelacao
     comportamento = _comportamento
+    estilo_danca = "normal"
     dia_fixo = 0
     status = "disponivel"
+    status_inicial = "disponivel"
     vezes_expulso = 0
+    vezes_expulso_inicial = 0
     
     //falas
     fala_chegada = ["..."]

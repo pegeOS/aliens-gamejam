@@ -1,3 +1,3 @@
-texto = "CONTINUAR";
+texto = "CONTINUE";
 cor = c_white;
 acao = "continuar";

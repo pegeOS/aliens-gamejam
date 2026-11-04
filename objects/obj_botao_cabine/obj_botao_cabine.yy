@@ -30,7 +30,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"cor","filters":[],"listItems":[],"multiselect":false,"name":"cor","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FF1717ED","varType":7,},
-    {"$GMObjectProperty":"v2","%Name":"texto","filters":[],"listItems":[],"multiselect":false,"name":"texto","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Expulsar","varType":2,},
+    {"$GMObjectProperty":"v2","%Name":"texto","filters":[],"listItems":[],"multiselect":false,"name":"texto","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Reject","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
