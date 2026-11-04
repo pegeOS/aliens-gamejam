@@ -39,6 +39,9 @@ if (variable_instance_exists(id, "acao")) {
 
     image_xscale = _emcima ? 2.2 : 2;
     image_yscale = _emcima ? 0.7 : 0.6;
+    image_blend = _emcima
+        ? make_colour_rgb(107, 54, 51)
+        : make_colour_rgb(74, 30, 35);
 
     if (_emcima && mouse_check_button_pressed(mb_left)) {
 

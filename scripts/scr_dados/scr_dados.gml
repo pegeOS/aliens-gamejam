@@ -3,7 +3,7 @@ function cadastra_pessoas() {
 
 
 // humanos normais
-var p = new Pessoa("Lucio", 18, "090.788.356-50", spr_masc1, spr_masc1_head, true, false, "nunca", "normal")
+var p = new Pessoa("Lucio", 18, "482-61-7395", spr_masc1, spr_masc1_head, true, false, "nunca", "normal")
 p.estilo_danca = "step"
 p.comportamento = "He keeps a nice, easy rhythm."
 
@@ -37,7 +37,7 @@ p.fala_balada = [
     
 
 // alien
-p = new Pessoa("Marta", 25, "111.111.111-11", spr_fem_1, spr_fem_1, false, true, "cabine", "normal")
+p = new Pessoa("Marta", 25, "222-22-2222", spr_fem_1, spr_fem_1, false, true, "cabine", "normal")
 p.estilo_danca = "odd"
 p.comportamento = "Those turns are a little too sharp for the music."
 
@@ -65,7 +65,7 @@ p.fala_balada = [
 
 
 // alien que só entrega na balada
-p = new Pessoa("Ze", 30, "222.222.222-22", spr_masc2, spr_masc2, true, true, "balada", "dança errado")
+p = new Pessoa("Ze", 30, "617-38-4295", spr_masc2, spr_masc2, true, true, "balada", "dança errado")
 p.estilo_danca = "wrong_beat"
 p.comportamento = "That fellow moves like the band is playing backward."
 
@@ -92,7 +92,7 @@ p.fala_balada = [
 ]
 
 	
-	p = new Pessoa("Joey", 28, "000.000.000-00", spr_masc3, spr_masc3, true, false, "nunca", "normal")
+	p = new Pessoa("Joey", 28, "529-46-1873", spr_masc3, spr_masc3, true, false, "nunca", "normal")
     p.estilo_danca = "step"
     p.comportamento = "He's got a light step and plenty of confidence."
     p.dia_fixo = 1;  
@@ -115,7 +115,7 @@ p.fala_balada = [
         "Come on, snake! Let's rattle!."
     ]
 
-p = new Pessoa("Betty", 21, "111.222.333-44", spr_fem2, spr_fem2, true, false, "nunca", "normal");
+p = new Pessoa("Betty", 21, "318-70-5624", spr_fem2, spr_fem2, true, false, "nunca", "normal");
 p.estilo_danca = "sway"
 p.comportamento = "She knows her way around a dance floor."
 p.dia_fixo = 1;  
@@ -137,7 +137,7 @@ p.fala_balada = [
 ];
 
 
-p = new Pessoa("Johnny", 24, "555.666.777-88", spr_masc4, spr_masc4, true, false, "nunca","normal")
+p = new Pessoa("Johnny", 24, "736-48-2915", spr_masc4, spr_masc4, true, false, "nunca","normal")
 p.estilo_danca = "showoff"
 p.comportamento = "He's showing off, but he hasn't missed the beat."
 p.dia_fixo = 2;  
@@ -158,7 +158,7 @@ p.fala_balada = [
     "Just spreading a little apple butter, you dig?"
 ];
 
-p = new Pessoa("Arthur", 22, "999.888.777-66", spr_masc5, spr_masc5, false, true, "cabine", "normal")
+p = new Pessoa("Arthur", 22, "415-69-3827", spr_masc5, spr_masc5, false, true, "cabine", "normal")
 p.estilo_danca = "odd"
 p.comportamento = "Those little pauses don't match the band's rhythm."
 p.dia_fixo = 3;  
@@ -180,7 +180,7 @@ p.fala_balada = [
 ];
 
 
-p = new Pessoa("Peggy", 23, "333.444.555-22", spr_fem3, spr_fem3, false, false, "nunca", "normal");
+p = new Pessoa("Peggy", 23, "284-51-9673", spr_fem3, spr_fem3, false, false, "nunca", "normal");
 p.estilo_danca = "still"
 p.comportamento = "She hasn't danced once; maybe she just likes the music."
 p.dia_fixo = 4;  
@@ -201,7 +201,7 @@ p.fala_balada = [
     "Too many neckers on the floor tonight, get a room!"
 ];
 
-p = new Pessoa("Duke", 26, "777.111.222-33", spr_p2, spr_p2, false,true,"cabine", "normal")
+p = new Pessoa("Duke", 26, "693-52-7481", spr_p2, spr_p2, false,true,"cabine", "normal")
 p.estilo_danca = "strange_turn"
 p.comportamento = "He keeps turning toward the wall between songs."
 p.dia_fixo = 5;  
@@ -237,7 +237,7 @@ function monta_fila(_dia, _quantidade) {
         if (p.status == "disponivel") {
             //se nunca apareceu, respeita o dia fixo
             if (p.dia_fixo == _dia)      array_push(fixos, p)
-            else if (p.dia_fixo == 0)    array_push(sorteaveis, p)
+            else if (p.dia_fixo == 0 || p.dia_fixo < _dia) array_push(sorteaveis, p)
         }
         else {
             //se já apareceu ( status diferente de "disponivel") volta pro sorteio

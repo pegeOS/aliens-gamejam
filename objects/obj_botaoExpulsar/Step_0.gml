@@ -23,7 +23,7 @@ if (_emcima) {
                     // Registra a tentativa
                     obj_controla_balada.chances++;
 
-                    if (_alvo.info.alien == true) {
+                    if (_alvo.info.alien == true || !_alvo.info.convite) {
 
                         global.pontuacao += 100;
 

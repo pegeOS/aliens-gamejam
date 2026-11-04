@@ -10,18 +10,12 @@ if(ampliar && mouse_check_button_pressed(mb_left) && !ignora_clique){
 ignora_clique = false
 
 //resetar atributos pra quando ta sem zoom
-if(ampliar = false){
-    image_xscale = lerp(image_xscale, 1, 0.1)
+if (!ampliar) {
+    image_xscale = lerp(image_xscale, 1.5, 0.1)
     image_yscale = image_xscale
-    x = lerp(x, 550, 0.1)
-    y = lerp(y, 650, 0.1)
+    x = lerp(x, 520, 0.1)
+    y = lerp(y, 680, 0.1)
     escuro = lerp(escuro, 0, 0.15)
-    
-    //lista de convidados
-     with(obj_lista){
-        
-        y = lerp(y, 928 , 0.1)
-    }
 }
 else{ //com zoom
     sprite_index = spr_IDgrande
@@ -31,9 +25,4 @@ else{ //com zoom
     y = lerp(y, display_get_gui_height()/2 - 100 , 0.1)
     escuro = lerp(escuro, 0.6, 0.1)
     
-    //lista de convidados
-    with(obj_lista){
-        image_angle = lerp(image_angle, 0, 0.1)
-        y = lerp(y, 352, 0.1)
-    }
 }

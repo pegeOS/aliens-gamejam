@@ -53,7 +53,10 @@ if (variable_struct_exists(_info, "cpf")) {
 }
 
 if (variable_struct_exists(_info, "comportamento")) {
-	draw_text_ext(340, _top + 132, string(_info.comportamento), 4, 530)
+	var _descricao = string(_info.comportamento)
+	var _descricao_altura = string_height_ext(_descricao, -1, 530)
+	var _descricao_y = min(_top + 132, _bottom - 18 - _descricao_altura / 2)
+	draw_text_ext(340, _descricao_y, _descricao, -1, 530)
 }
 
 draw_set_halign(fa_center)

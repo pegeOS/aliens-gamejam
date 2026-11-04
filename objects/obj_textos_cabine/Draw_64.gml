@@ -51,35 +51,44 @@ draw_set_valign(-1)
 
 //resultado no popup
 if(obj_controlador.resultado_dia){
+    var _gui_w = display_get_gui_width();
+    var _gui_h = display_get_gui_height();
+    var _cx = _gui_w * 0.5;
+    var _cy = _gui_h * 0.5;
+    var _ouro = make_colour_rgb(210, 178, 113);
+    var _painel = make_colour_rgb(38, 28, 29);
+    var _titulo = obj_controlador.erros_dia == 0
+        ? "ALL CLEAR"
+        : "SHIFT'S OVER";
+    var _resumo = obj_controlador.erros_dia == 0
+        ? "No illegal guests were admitted."
+        : "Some guests entered illegally.";
+    var _proxima_etapa = obj_controlador.aliens_perdidos == 0
+        ? "NEXT: DAY " + string(global.dia + 1)
+        : "NEXT: DANCE HALL";
 
-    //fundo escuro
-    draw_set_alpha(0.7)
+    draw_set_alpha(0.78);
     draw_set_colour(c_black)
-    draw_rectangle(0, 0, 1400, 800, false)
+    draw_rectangle(0, 0, _gui_w, _gui_h, false)
 
     draw_set_alpha(1)
+    draw_set_colour(_painel)
+    draw_rectangle(_cx - 410, _cy - 210, _cx + 410, _cy + 210, false)
+    draw_set_colour(_ouro)
+    draw_rectangle(_cx - 410, _cy - 210, _cx + 410, _cy + 210, true)
+    draw_line(_cx - 370, _cy - 132, _cx + 370, _cy - 132)
 
-    //painel
-    draw_set_colour(make_colour_rgb(74, 30, 35))
-    draw_rectangle(400, 270, 1000, 530, false)
-
-    //texto
     draw_set_colour(c_white)
+    draw_set_font(fnt_limelight)
     draw_set_halign(fa_center)
     draw_set_valign(fa_middle)
+    draw_text_transformed(_cx, _cy - 164, "SHIFT REPORT", 0.8, 0.8, 0)
+    draw_text_transformed(_cx, _cy - 52, _titulo, 1.15, 1.15, 0)
 
-    draw_set_font(fnt_limelight)
-
-    if(obj_controlador.erros_dia == 0){
-        draw_text(700, 350, "Congratulations!")
-        draw_set_font(fnt_marketdeco)
-        draw_text(700, 410, "You have indentified all aliens!!")
-    }
-    else{
-        draw_text(700, 350, "SHIFT'S OVER")
-        draw_set_font(fnt_marketdeco)
-        draw_text(700, 410, "Some guests entered illegally.")
-    }
+    draw_set_font(fnt_marketdeco)
+    draw_text(_cx, _cy + 18, _resumo)
+    draw_set_colour(_ouro)
+    draw_text(_cx, _cy + 78, _proxima_etapa)
 
     draw_set_colour(c_white)
     draw_set_halign(fa_left)

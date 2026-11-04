@@ -11,11 +11,11 @@ if(ampliar && mouse_check_button_pressed(mb_left) && !ignora_clique){
 ignora_clique = false
 
 //resetar atributos pra quando ta sem zoom
-if(ampliar = false){
-    image_xscale = lerp(image_xscale, 1, 0.1)
+if (!ampliar) {
+    image_xscale = lerp(image_xscale, 1.25, 0.1)
     image_yscale = image_xscale
-    x = lerp(x, 708, 0.1)
-    y = lerp(y, 650, 0.1)
+    x = lerp(x, 810, 0.1)
+    y = lerp(y, 680, 0.1)
     escuro = lerp(escuro, 0, 0.15)
 }
 else{ //com zoom

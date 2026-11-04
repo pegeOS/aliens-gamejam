@@ -9,4 +9,4 @@ sprite_pequeno = sprite_index
 
 //texto na frente da sprite do id
 depth = -2  
-escala = 4.5
+escala = 1.5

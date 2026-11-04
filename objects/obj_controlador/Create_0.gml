@@ -42,6 +42,8 @@ resultado_dia = false;
 feedback_pontos = "";
 feedback_timer = 0;
 venceu = false;
+introducao_vista = false;
+introducao_ativa = false;
 
 verifica_vitoria = function() {
     if (!venceu && global.pontuacao >= 1000) {
@@ -210,7 +212,7 @@ expulsar = function() {
     decidido = true;
     reacao_texto = pessoa_atual.reacao_expulso;
 
-    if (pessoa_atual.alien == false) {
+    if (pessoa_atual.alien == false && pessoa_atual.convite) {
         erros_dia++;
         global.pontuacao = max(0, global.pontuacao - 50);
         feedback_pontos = "-50";
@@ -222,9 +224,16 @@ expulsar = function() {
 
     feedback_timer = 90;
 
-    pessoa_atual.corpo = asset_get_index(
-        string(pessoa_atual.corpo) + "bravo"
-    );
+    switch (pessoa_atual.corpo_original) {
+        case spr_masc1: pessoa_atual.corpo = spr_masc1_bravo; break;
+        case spr_masc2: pessoa_atual.corpo = spr_masc2_bravo; break;
+        case spr_masc3: pessoa_atual.corpo = spr_masc3_bravo; break;
+        case spr_masc4: pessoa_atual.corpo = spr_masc4_bravo; break;
+        case spr_masc5: pessoa_atual.corpo = spr_masc5_bravo; break;
+        case spr_fem_1: pessoa_atual.corpo = spr_fem1_bravo; break;
+        case spr_fem2: pessoa_atual.corpo = spr_fem2_bravo; break;
+        case spr_fem3: pessoa_atual.corpo = spr_fem3_bravo; break;
+    }
 
     pessoa_atual.status = "expulso";
     pessoa_atual.vezes_expulso++;

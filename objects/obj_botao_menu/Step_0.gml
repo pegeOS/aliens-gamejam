@@ -12,8 +12,16 @@ if (_emcima) {
         var _controle = instance_find(obj_controlador, 0);
 
         if (instance_exists(_controle)) {
-            _controle.nova_partida();
-            room_goto(rm_cabine);
+            if (_controle.introducao_ativa) exit;
+
+            if (!_controle.introducao_vista) {
+                _controle.introducao_ativa = true;
+                instance_create_layer(0, 0, "Instances", obj_intro);
+            }
+            else {
+                _controle.nova_partida();
+                room_goto(rm_cabine);
+            }
         }
         else {
             show_debug_message("ERRO: controlador não encontrado!");
