@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"cenario",
-    "path":"folders/Sprites/cenario.yy",
+    "path":"folders/Sprites/botao/cenario.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -12,21 +12,21 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"43e6bc52-c02d-4939-a62a-f271c1a25062","name":"43e6bc52-c02d-4939-a62a-f271c1a25062","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5cb6e07c-b3df-4c8f-93ff-504dd73d8da8","name":"5cb6e07c-b3df-4c8f-93ff-504dd73d8da8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":10,
   "gridY":10,
   "height":360,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"9562324d-fcd0-4ef6-ace1-1160ea71581a","blendMode":0,"displayName":"default","isLocked":false,"name":"9562324d-fcd0-4ef6-ace1-1160ea71581a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"4e1b3e0c-4f85-4914-8a83-08806f9191f3","blendMode":0,"displayName":"default","isLocked":false,"name":"4e1b3e0c-4f85-4914-8a83-08806f9191f3","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_cabine",
   "nineSlice":null,
   "origin":4,
   "parent":{
     "name":"cenario",
-    "path":"folders/Sprites/cenario.yy",
+    "path":"folders/Sprites/botao/cenario.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"43e6bc52-c02d-4939-a62a-f271c1a25062","path":"sprites/spr_cabine/spr_cabine.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7328bdb7-8d10-4c7e-8fbb-4e461ae83c1b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5cb6e07c-b3df-4c8f-93ff-504dd73d8da8","path":"sprites/spr_cabine/spr_cabine.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"40e2846a-b526-4320-88e7-4abae14a3a83","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
