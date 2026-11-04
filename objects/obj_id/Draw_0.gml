@@ -31,9 +31,9 @@ if(ampliar && image_xscale > escala * 0.6){
     draw_set_color(c_black) 
     draw_set_valign(fa_top)
 
-    draw_text_transformed(x - _x, y - _y, "Nome: " + dono.nome, 1, 1, 0)
-    draw_text_transformed(x - _x, y, "Idade: " + string(dono.idade), 1, 1, 0)
-    draw_text_transformed(x - _x, y + _y, "CPF: "   + dono.cpf, 1, 1, 0)
+    draw_text_transformed(x - _x, y - _y, "Name: " + dono.nome, 1, 1, 0)
+    draw_text_transformed(x - _x, y, "Age: " + string(dono.idade), 1, 1, 0)
+    draw_text_transformed(x - _x, y + _y, "SSN: "   + dono.cpf, 1, 1, 0)
     
     draw_set_color(c_white)
 }
