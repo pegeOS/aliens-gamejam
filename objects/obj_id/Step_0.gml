@@ -21,8 +21,8 @@ else{ //com zoom
     sprite_index = spr_IDgrande
     image_xscale = lerp(image_xscale, escala, 0.1)
     image_yscale = image_xscale
-    x = lerp(x, display_get_gui_width()/2 - 280, 0.1)
-    y = lerp(y, display_get_gui_height()/2 - 100 , 0.1)
+    x = lerp(x, display_get_gui_width()/2, 0.1)
+    y = lerp(y, display_get_gui_height()/2 , 0.1)
     escuro = lerp(escuro, 0.6, 0.1)
     
 }

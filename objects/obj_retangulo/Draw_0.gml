@@ -26,17 +26,7 @@ draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
 draw_set_colour(c_white)
 if (sprite_exists(_sprite_id)) {
-	draw_sprite_ext(
-		_sprite_id,
-		0,
-		160,
-		_top + (_bottom - _top) / 2,
-		_sprite_scale,
-		_sprite_scale,
-		0,
-		c_white,
-		1
-	)
+	draw_sprite_ext(_sprite_id,0,160,_top + (_bottom - _top) / 2,_sprite_scale,_sprite_scale,0,c_white,1)
 }
 
 draw_set_halign(fa_left)

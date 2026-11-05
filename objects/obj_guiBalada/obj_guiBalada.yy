@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"botao",
-    "path":"folders/Objects/botao.yy",
+    "path":"folders/Objects/itens/botao.yy",
   },
   "parentObjectId":null,
   "persistent":false,
