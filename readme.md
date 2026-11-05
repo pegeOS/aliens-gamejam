@@ -30,7 +30,7 @@
 
 Durante cada dia, diferentes visitantes aparecem para serem interrogados. Por meio de conversas e informações apresentadas durante a inspeção, o jogador precisa decidir se deve liberar ou expulsar cada pessoa.
 
-Entretanto, nem todas as decisões são simples: liberar um alienígena permite que ele entre na balada, enquanto expulsar uma pessoa inocente gera penalidades.
+Entretanto, nem todas as decisões são simples: convites podem ser verdadeiros ou falsos, e alguns visitantes retornam com documentos diferentes. A lista diária combina estreias programadas e personagens que voltam ao longo da partida; nem todos aparecem todos os dias.
 
 Ao final do expediente, os alienígenas que conseguiram entrar precisam ser identificados e expulsos antes que escapem. Cada ameaça não neutralizada representa a perda de uma vida.
 
@@ -80,7 +80,9 @@ Após a conversa, escolha entre duas ações:
 - **Liberar:** permite que o visitante entre na balada.
 - **Expulsar:** impede a entrada do visitante.
 
-Cada decisão influencia sua pontuação e o andamento da partida. Liberar um alienígena ou expulsar um humano gera penalidades.
+Cada decisão influencia sua pontuação e o andamento da partida. Liberar um alienígena, alguém sem convite ou alguém com convite falso, assim como expulsar um humano com convite verdadeiro, gera penalidades. Expulsar um alienígena ou alguém sem convite válido é a decisão correta.
+
+O elenco tem 17 personagens com combinações variadas dos sprites existentes. Quem foi rejeitado sem convite pode voltar com um convite falso; personagens que estreiam com convite falso podem retornar com um convite verdadeiro, independentemente de serem humanos ou alienígenas.
 
 ### 🪩 Controle da balada
 

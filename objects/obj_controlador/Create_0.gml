@@ -54,6 +54,13 @@ verifica_vitoria = function() {
     return venceu;
 };
 
+pessoa_deve_ser_rejeitada = function(_pessoa) {
+    return _pessoa.alien
+        || !_pessoa.convite
+        || _pessoa.convite_falso
+        || !_pessoa.id_autentico;
+};
+
 // =====================================
 // DIÁLOGOS
 // =====================================
@@ -66,11 +73,33 @@ carrega_falas = function() {
     reacao_texto = "";
 
     if (pessoa_atual != undefined) {
+        prepara_visita(pessoa_atual);
         falas_atuais = pega_falas_cabine(pessoa_atual);
     }
     else {
         falas_atuais = [];
     }
+};
+
+prepara_visita = function(_pessoa) {
+    if (_pessoa.ultimo_dia_visita == global.dia) return;
+
+    if (_pessoa.vezes_apareceu > 0) {
+        if (!_pessoa.convite_inicial && _pessoa.rejeitado_sem_convite) {
+            _pessoa.convite = true;
+            _pessoa.convite_falso = true;
+        }
+        else if (_pessoa.convite_falso_inicial) {
+            _pessoa.convite = true;
+            _pessoa.convite_falso = false;
+        }
+    }
+
+    _pessoa.fotoConvite = _pessoa.convite_falso
+        ? spr_conviteFalso
+        : spr_conviteGrande;
+    _pessoa.vezes_apareceu++;
+    _pessoa.ultimo_dia_visita = global.dia;
 };
 
 // =====================================
@@ -155,6 +184,28 @@ nova_partida = function() {
         _p.status = _p.status_inicial;
         _p.vezes_expulso = _p.vezes_expulso_inicial;
         _p.corpo = _p.corpo_original;
+        _p.convite = _p.convite_inicial;
+        _p.convite_falso = _p.convite_falso_inicial;
+        _p.fotoConvite = _p.convite_falso
+            ? spr_conviteFalso
+            : spr_conviteGrande;
+        _p.vezes_apareceu = 0;
+        _p.ultimo_dia_visita = -1;
+        _p.rejeitado_sem_convite = false;
+        _p.id_autentico = false;
+        _p.id_consultado = false;
+    }
+
+    randomize();
+    var _pessoas_sorteadas = [];
+    for (var i = 0; i < array_length(global.pessoas); i++) {
+        array_push(_pessoas_sorteadas, global.pessoas[i]);
+    }
+    array_shuffle_ext(_pessoas_sorteadas);
+
+    var _quantidade_com_selo = ceil(array_length(_pessoas_sorteadas) / 2);
+    for (var i = 0; i < _quantidade_com_selo; i++) {
+        _pessoas_sorteadas[i].id_autentico = true;
     }
 
     aliens_perdidos = 0;
@@ -184,7 +235,10 @@ liberar = function() {
     decidido = true;
     reacao_texto = pessoa_atual.reacao_liberado;
 
-    if (pessoa_atual.alien == true) {
+    if (!pessoa_atual.id_consultado) {
+        feedback_pontos = "CHECK ID FIRST";
+    }
+    else if (pessoa_deve_ser_rejeitada(pessoa_atual)) {
         erros_dia++;
         global.pontuacao = max(0, global.pontuacao - 50);
         feedback_pontos = "-50";
@@ -212,7 +266,10 @@ expulsar = function() {
     decidido = true;
     reacao_texto = pessoa_atual.reacao_expulso;
 
-    if (pessoa_atual.alien == false && pessoa_atual.convite) {
+    if (!pessoa_atual.id_consultado) {
+        feedback_pontos = "CHECK ID FIRST";
+    }
+    else if (!pessoa_deve_ser_rejeitada(pessoa_atual)) {
         erros_dia++;
         global.pontuacao = max(0, global.pontuacao - 50);
         feedback_pontos = "-50";
@@ -237,6 +294,9 @@ expulsar = function() {
 
     pessoa_atual.status = "expulso";
     pessoa_atual.vezes_expulso++;
+    if (!pessoa_atual.convite && !pessoa_atual.convite_inicial) {
+        pessoa_atual.rejeitado_sem_convite = true;
+    }
 
     obj_pessoa.saida("direita");
     verifica_vitoria();

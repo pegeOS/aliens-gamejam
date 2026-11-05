@@ -17,6 +17,9 @@ function Pessoa(_nome, _idade, _cpf, _corpo, _cabeca, _convite, _fotoConvite,  _
     corpo_original = _corpo
     cabeca = _cabeca
     convite = _convite
+    convite_inicial = _convite
+    convite_falso = false
+    convite_falso_inicial = false
 	fotoConvite = _fotoConvite
     alien = _alien
     revelacao = _revelacao
@@ -27,6 +30,11 @@ function Pessoa(_nome, _idade, _cpf, _corpo, _cabeca, _convite, _fotoConvite,  _
     status_inicial = "disponivel"
     vezes_expulso = 0
     vezes_expulso_inicial = 0
+    vezes_apareceu = 0
+    ultimo_dia_visita = -1
+    rejeitado_sem_convite = false
+    id_autentico = false
+    id_consultado = false
     
     //falas
     fala_chegada = ["..."]

@@ -221,6 +221,202 @@ p.fala_balada = [
     "I'm gonna shake down this whole dance floor.",
     "Get out of the way unless you know how to jitterbug!"
 ];
+
+p = new Pessoa("Rose", 29, "581-24-9037", spr_fem_1, spr_fem_1, true, spr_conviteGrande, false, "nunca", "normal")
+p.estilo_danca = "sway"
+p.comportamento = "She follows the melody with an easy, relaxed step."
+p.dia_fixo = 1
+p.fala_chegada = [
+    "Good evening. Rose Calder, here for the dance.",
+    "My invitation should be in order.",
+    "I heard the band has a new trumpet player."
+]
+p.fala_volta_liberado = [
+    "Good to see you again. The band was lovely last time.",
+    "I brought the same invitation."
+]
+p.fala_volta_expulso = [
+    "I hope we can put last time behind us.",
+    "I would still like to hear the band."
+]
+p.reacao_liberado = "Thank you. Have a pleasant evening."
+p.reacao_expulso = "I understand. Good night."
+p.fala_balada = [
+    "The trumpet player has a wonderful tone.",
+    "I could listen to this band all evening."
+]
+
+p = new Pessoa("Calvin", 32, "274-83-6105", spr_masc5, spr_masc5, true, spr_conviteGrande, false, "nunca", "normal")
+p.convite_falso = true
+p.convite_falso_inicial = true
+p.estilo_danca = "step"
+p.comportamento = "He keeps a steady pace and rarely looks away from the band."
+p.dia_fixo = 2
+p.fala_chegada = [
+    "Calvin Brooks. I was told the dance starts at eight.",
+    "Here's my invitation.",
+    "Is the coat room still by the front door?"
+]
+p.fala_volta_liberado = [
+    "Back for another set. Everything is just fine.",
+    "I have the same invitation as before."
+]
+p.fala_volta_expulso = [
+    "I was hoping we could start over.",
+    "I brought my invitation again."
+]
+p.reacao_liberado = "Thanks. I'll be out on the floor."
+p.reacao_expulso = "All right. I won't make a scene."
+p.fala_balada = [
+    "This band has a good sense of time.",
+    "I might ask for the next dance."
+]
+
+p = new Pessoa("Nora", 27, "395-71-8264", spr_fem2, spr_fem2, false, spr_conviteGrande, true, "cabine", "normal")
+p.estilo_danca = "sway"
+p.comportamento = "She seems comfortable in the crowd and keeps to the beat."
+p.dia_fixo = 3
+p.fala_chegada = [
+    "Good evening. Is there room for one more?",
+    "I seem to have left my invitation at home.",
+    "I moved here recently, so I am still learning my way around."
+]
+p.fala_volta_liberado = [
+    "Good evening again. I have been looking forward to the music.",
+    "I brought a paper with me this time."
+]
+p.fala_volta_expulso = [
+    "I understand why you were cautious last time.",
+    "I brought a paper with me this time."
+]
+p.reacao_liberado = "Thank you. I will try not to take up too much room."
+p.reacao_expulso = "I see. Have a good evening."
+p.fala_balada = [
+    "The band sounds even better from this side of the room.",
+    "I have not heard this song in a long while."
+]
+
+p = new Pessoa("Theo", 20, "648-25-3719", spr_masc2, spr_masc2, false, spr_conviteGrande, false, "nunca", "normal")
+p.estilo_danca = "step"
+p.comportamento = "He is a little shy, but he keeps the rhythm well."
+p.dia_fixo = 4
+p.fala_chegada = [
+    "Hi. Theo Miller. I was invited by some friends.",
+    "I forgot to bring my invitation, I'm afraid.",
+    "They said the band plays a lot of swing."
+]
+p.fala_volta_liberado = [
+    "Hello again. My friends said to try once more.",
+    "I brought something for you to check this time."
+]
+p.fala_volta_expulso = [
+    "I know I should have brought my invitation last time.",
+    "I brought something for you to check this time."
+]
+p.reacao_liberado = "Thanks, I won't keep you."
+p.reacao_expulso = "Fair enough. Take care."
+p.fala_balada = [
+    "I think I am getting the hang of this dance.",
+    "My friends should be here soon."
+]
+
+p = new Pessoa("Iris", 25, "732-46-1809", spr_fem3, spr_fem3, true, spr_conviteGrande, false, "nunca", "normal")
+p.convite_falso = true
+p.convite_falso_inicial = true
+p.estilo_danca = "still"
+p.comportamento = "She listens to the whole song before making a move."
+p.dia_fixo = 5
+p.fala_chegada = [
+    "Hello. Iris Bennett. I was told to show this at the door.",
+    "I have not been here since the spring.",
+    "The room looks just the way I remember it."
+]
+p.fala_volta_liberado = [
+    "I had such a nice time that I came back.",
+    "I kept the same invitation."
+]
+p.fala_volta_expulso = [
+    "I am sorry things went poorly before.",
+    "I brought my invitation again."
+]
+p.reacao_liberado = "Thank you. I hope the band plays a slow one."
+p.reacao_expulso = "I understand. Have a good night."
+p.fala_balada = [
+    "The room is livelier than I expected.",
+    "I like to hear a song through before I dance."
+]
+
+p = new Pessoa("Edwin", 34, "517-63-2048", spr_masc3, spr_masc3, true, spr_conviteGrande, true, "cabine", "normal")
+p.estilo_danca = "showoff"
+p.comportamento = "His steps are practiced, though he never loses the beat."
+p.dia_fixo = 6
+p.fala_chegada = [
+    "Evening. Edwin Price, here to hear the orchestra.",
+    "My invitation is right here.",
+    "I have been looking forward to the clarinet solo."
+]
+p.fala_volta_liberado = [
+    "Good to be back. The orchestra sounded fine last time.",
+    "My invitation is still in my pocket."
+]
+p.fala_volta_expulso = [
+    "I hope there is no hard feeling about last time.",
+    "I brought my invitation again."
+]
+p.reacao_liberado = "Much obliged. Enjoy the music."
+p.reacao_expulso = "All right. Have a good evening."
+p.fala_balada = [
+    "That clarinet player has remarkable control.",
+    "The band is playing the song a little faster tonight."
+]
+
+p = new Pessoa("June", 23, "861-39-4720", spr_fem_1, spr_fem_1, true, spr_conviteGrande, false, "nunca", "normal")
+p.estilo_danca = "sway"
+p.comportamento = "She moves with the melody and gives other dancers plenty of room."
+p.fala_chegada = [
+    "Hi there. June Parker. Is the dance already underway?",
+    "I have my invitation with me.",
+    "My cousin said the band is better than the radio."
+]
+p.fala_volta_liberado = [
+    "I am back for another song.",
+    "Same invitation, if you need to see it."
+]
+p.fala_volta_expulso = [
+    "I hope you will give me another chance.",
+    "I brought my invitation along this time."
+]
+p.reacao_liberado = "Thanks! See you on the dance floor."
+p.reacao_expulso = "No hard feelings. Good night."
+p.fala_balada = [
+    "My cousin was right about the band.",
+    "This song is even better than the last one."
+]
+
+p = new Pessoa("Felix", 28, "463-18-7592", spr_masc4, spr_masc4, true, spr_conviteGrande, true, "cabine", "normal")
+p.convite_falso = true
+p.convite_falso_inicial = true
+p.estilo_danca = "step"
+p.comportamento = "He moves neatly through the crowd without bumping into anyone."
+p.fala_chegada = [
+    "Evening. Felix Ward. I would like to hear the band.",
+    "Here is my invitation.",
+    "Do you know if they take requests?"
+]
+p.fala_volta_liberado = [
+    "Good evening again. I have been practicing that last dance.",
+    "I have my invitation right here."
+]
+p.fala_volta_expulso = [
+    "I thought I would try again tonight.",
+    "I have my invitation right here."
+]
+p.reacao_liberado = "Thank you. I will be near the band."
+p.reacao_expulso = "All right. Enjoy the rest of the night."
+p.fala_balada = [
+    "That was a fine arrangement.",
+    "I would not mind hearing that one again."
+]
 }
 
 

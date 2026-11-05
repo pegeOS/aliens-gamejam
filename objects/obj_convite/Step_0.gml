@@ -19,7 +19,7 @@ if (!ampliar) {
     escuro = lerp(escuro, 0, 0.15)
 }
 else{ //com zoom
-    sprite_index = spr_conviteGrande
+    sprite_index = dono.fotoConvite
     image_xscale = lerp(image_xscale, escala, 0.1)
     image_yscale = image_xscale
     x = lerp(x, display_get_gui_width()/2 , 0.1)
