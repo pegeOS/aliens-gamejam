@@ -44,6 +44,8 @@ feedback_timer = 0;
 venceu = false;
 introducao_vista = false;
 introducao_ativa = false;
+tutorial_balada_visto = false;
+tutorial_balada_ativa = false;
 
 verifica_vitoria = function() {
     if (!venceu && global.pontuacao >= 1000) {
@@ -172,6 +174,8 @@ nova_partida = function() {
     global.dia = 1;
     global.vidas = 3;
     global.pontuacao = 0;
+    tutorial_balada_visto = false;
+    tutorial_balada_ativa = false;
     global.fila = [];
     global.balada = [];
     global.aliens = [];

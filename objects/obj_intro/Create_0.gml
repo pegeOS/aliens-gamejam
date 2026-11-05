@@ -15,11 +15,31 @@ falas = [
     "We need your help to identify those aliens, and prevent them from partying. The world thanks you."
 ];
 
+var _controle = instance_find(obj_controlador, 0);
+tutorial_balada = instance_exists(_controle) && _controle.tutorial_balada_ativa;
+
+if (tutorial_balada) {
+    depth = -10000;
+    falas = [
+        "Aliens slipped past the checkpoint. Be more careful, Agent.",
+        "At the dance hall, watch for strange moves and off-beat dancing. A clue is not proof.",
+        "Click a guest to select them. Press YES to eject a suspect. Attempts are limited; ejecting a human costs points."
+    ];
+}
+
 concluir_introducao = function() {
     var _controle = instance_find(obj_controlador, 0);
 
     if (!instance_exists(_controle)) {
         show_debug_message("ERROR: game controller missing at end of introduction.");
+        instance_destroy();
+        return;
+    }
+
+    if (tutorial_balada) {
+        _controle.tutorial_balada_ativa = false;
+        _controle.tutorial_balada_visto = true;
+        room_goto(rm_balada);
         instance_destroy();
         return;
     }

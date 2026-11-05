@@ -10,6 +10,13 @@ if (_c.venceu) {
     visible = false;
     exit;
 }
+
+if (_c.tutorial_balada_ativa) {
+    visible = false;
+    image_alpha = 0;
+    exit;
+}
+
 // NOVOS BOTÕES DO ENCERRAMENTO
 if (variable_instance_exists(id, "acao")) {
 
@@ -49,7 +56,13 @@ if (variable_instance_exists(id, "acao")) {
             _c.fim_do_dia();
         }
         else if (acao == "balada") {
-            room_goto(rm_balada);
+            if (!_c.tutorial_balada_visto) {
+                _c.tutorial_balada_ativa = true;
+                instance_create_layer(0, 0, "botoes", obj_intro);
+            }
+            else {
+                room_goto(rm_balada);
+            }
         }
     }
 }
