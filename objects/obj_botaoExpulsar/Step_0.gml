@@ -23,7 +23,12 @@ if (_emcima) {
                     // Registra a tentativa
                     obj_controla_balada.chances++;
 
-                    if (_alvo.info.alien == true || !_alvo.info.convite) {
+                    if (!instance_exists(_controlador) || !_alvo.info.id_consultado) {
+                        show_debug_message(
+                            _alvo.info.nome + " não pontua: ID não consultado"
+                        );
+                    }
+                    else if (_controlador.pessoa_deve_ser_rejeitada(_alvo.info)) {
 
                         global.pontuacao += 100;
 

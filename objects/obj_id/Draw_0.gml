@@ -33,4 +33,13 @@ if(ampliar && image_xscale > escala * 0.6){
 
     draw_set_valign(fa_top)
     draw_set_color(c_white)
+
+    if (dono.id_autentico) {
+        draw_sprite_part_ext(
+            spr_IDgrande_1, 0,
+            240, 230, 64, 45,
+            x - 175, y + 120,
+            1.3, 1.3, c_white, 1
+        )
+    }
 }
