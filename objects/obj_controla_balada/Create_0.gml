@@ -1,37 +1,31 @@
 
-mensagem_resultado = "";
-quant_aliens = 0;
-chances = 0;
-global.aliens = [];
-fim_de_jogo = false;
-sprites = [spr_p2];
+randomize()
 
-nomes = [
-    "Peter", "Cynthia", "Artur", "Brad", "Frank",
-    "Michael", "Bryan", "Phil", "Elvis", "Elliot",
-    "Jimmy", "Silvester", "Ryder", "Ash", "Colin"
-];
+mensagem_resultado = ""
+quant_aliens = 0
+chances = 0
+global.aliens = []
+fim_de_jogo = false
+sprites = [spr_julio, spr_henk, spr_masc1, spr_masc2, spr_masc3, spr_masc4, spr_fem_1, spr_fem2, spr_fem3, spr_angelo, spr_taveira]
 
-resultado_balada = false;
-aliens_restantes = 0;
-vidas_perdidas = 0;
-global.balada_decorativos = [];
+nomes = ["Peter", "Cynthia", "Artur", "Brad", "Frank", "Michael", "Bryan", "Phil", "Elvis", "Elliot", "Jimmy", "Silvester", "Ryder", "Ash", "Colin"]
 
-show_debug_message("CONTROLADOR INICIADO");
-show_debug_message("Resultado inicial: " + string(resultado_balada));
+resultado_balada = false
+aliens_restantes = 0
+vidas_perdidas = 0
+global.balada_decorativos = []
 
-// CONTANDO OS ALIENS QUE ENTRARAM NA BALADA
-for (var i = 0; i < array_length(global.balada); i++) {
 
-    if (global.balada[i].alien == true) {
-        quant_aliens++;
-        array_push(global.aliens, global.balada[i]);
+
+for(var i = 0; i < array_length(global.balada); i++){
+
+    if (global.balada[i].alien == true){
+        quant_aliens++
+        array_push(global.aliens, global.balada[i])
     }
 }
 
-show_debug_message("ALIENS QUE ENTRARAM: " + string(quant_aliens));
 
-// CRIANDO NPCs VISUAIS SEM INCLUIR NA LISTA DE PARTICIPANTES
 while (
     array_length(global.balada_decorativos) < 6
     && array_length(global.balada) + array_length(global.balada_decorativos) < 12
@@ -41,6 +35,8 @@ while (
     sprite_random = irandom(array_length(sprites) - 1);
     var _numero_convidado = array_length(global.balada_decorativos) + 1;
     var _sprite_convidado = sprites[sprite_random];
+	
+	array_delete(sprites, sprite_random, 1)
 
     array_push(global.balada_decorativos, {
         nome: nomes[nome_random],
@@ -57,7 +53,7 @@ while (
 
 instance_create_layer(0, 0, "Instances", obj_cria_pessoab);
 
-// FINALIZAÇÃO DA BALADA
+
 finalizar_balada = function() {
 
     show_debug_message("FINALIZAR BALADA FOI CHAMADA");
@@ -73,7 +69,7 @@ finalizar_balada = function() {
         return;
     }
 
-    // Só finaliza quando todas as tentativas forem utilizadas
+
     if (chances < quant_aliens) return;
 
     show_debug_message("PASSOU DA VERIFICACAO");

@@ -393,6 +393,31 @@ p.fala_balada = [
     "This song is even better than the last one."
 ]
 
+p = new Pessoa("Martin", 25, "463-15-7587", spr_masc4, spr_masc2, true, spr_conviteGrande, true, "cabine", "normal")
+p.convite_falso = true
+p.convite_falso_inicial = true
+p.estilo_danca = "step"
+p.comportamento = "He moves neatly through the crowd without bumping into anyone."
+p.fala_chegada = [
+    "Morning Martin. I would like to hear the band.",
+    "Here is my invitation.",
+    "Do you know if they take requests?"
+]
+p.fala_volta_liberado = [
+    "Good evening again. I have been practicing that last dance.",
+    "I have my invitation right here."
+]
+p.fala_volta_expulso = [
+    "I thought I would try again tonight.",
+    "I have my invitation right here."
+]
+p.reacao_liberado = "Thank you. I will be near the band."
+p.reacao_expulso = "All right. Enjoy the rest of the night."
+p.fala_balada = [
+    "That was a fine arrangement.",
+    "I would not mind hearing that one again."
+]
+
 p = new Pessoa("Felix", 28, "463-18-7592", spr_masc4, spr_masc4, true, spr_conviteGrande, true, "cabine", "normal")
 p.convite_falso = true
 p.convite_falso_inicial = true
@@ -417,6 +442,61 @@ p.fala_balada = [
     "That was a fine arrangement.",
     "I would not mind hearing that one again."
 ]
+
+
+p = new Pessoa("Lydia", 25, "433-15-1891", spr_fem2, spr_fem3, true, spr_conviteGrande, true, "cabine", "normal")
+p.dia_fixo = 4
+p.convite_falso = true
+p.convite_falso_inicial = true
+p.estilo_danca = "step"
+p.comportamento = "He moves neatly through the crowd without bumping into anyone."
+p.fala_chegada = [
+    "Evening. Lydia. I would like to hear the band.",
+    "Here is my invitation.",
+    "Do you know if they take requests?"
+]
+p.fala_volta_liberado = [
+    "Good evening again. I have been practicing that last dance.",
+    "I have my invitation right here."
+]
+p.fala_volta_expulso = [
+    "I thought I would try again tonight.",
+    "I have my invitation right here."
+]
+p.reacao_liberado = "Thank you. I will be near the band."
+p.reacao_expulso = "All right. Enjoy the rest of the night."
+p.fala_balada = [
+    "That was a fine arrangement.",
+    "I would not mind hearing that one again."
+]
+
+p = new Pessoa("Glenda", 25, "133-14-8754", spr_fem3, spr_fem_1, true, spr_conviteGrande, true, "cabine", "normal")
+p.dia_fixo = 3
+p.convite_falso = true
+p.convite_falso_inicial = true
+p.estilo_danca = "step"
+p.comportamento = "He moves neatly through the crowd without bumping into anyone."
+p.fala_chegada = [
+    "Hello. Glenda. I was told to show this at the door.",
+    "Here is my invitation.",
+    "Do you know if they take requests?"
+]
+p.fala_volta_liberado = [
+    "Good evening again. I have been practicing that last dance.",
+    "I have my invitation right here."
+]
+p.fala_volta_expulso = [
+    "I thought I would try again tonight.",
+    "I have my invitation right here."
+]
+p.reacao_liberado = "Thank you. I will be near the band."
+p.reacao_expulso = "All right. Enjoy the rest of the night."
+p.fala_balada = [
+    "That was a fine arrangement.",
+    "I would not mind hearing that one again."
+]
+
+
 }
 
 
@@ -427,7 +507,7 @@ function monta_fila(_dia, _quantidade) {
     var fixos = []
     var sorteaveis = []
 
-    for (var i = 0; i < array_length(global.pessoas); i++) {
+    for (var i = 0; i < 6; i++) {
         var p = global.pessoas[i]
 
         if (p.status == "disponivel") {
