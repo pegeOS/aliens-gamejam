@@ -507,7 +507,7 @@ function monta_fila(_dia, _quantidade) {
     var fixos = []
     var sorteaveis = []
 
-    for (var i = 0; i < 6; i++) {
+    for (var i = 0; i < array_length(global.pessoas); i++) {
         var p = global.pessoas[i]
 
         if (p.status == "disponivel") {
