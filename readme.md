@@ -12,29 +12,23 @@
 ![GameMaker](https://img.shields.io/badge/GameMaker-000000?style=for-the-badge&logo=gamemaker&logoColor=white)
 ![GML](https://img.shields.io/badge/GameMaker_Language-GML-blue?style=for-the-badge)
 
-<p align="center">
-  <!-- Adicione a logo do jogo futuramente -->
-</p>
-
 <h1 align="center">👽 Aliens Gamejam</h1>
 
 <p align="center">
-  Um jogo de gerenciamento e investigação no qual você precisa identificar visitantes alienígenas, controlar a entrada de pessoas e impedir que ameaças invadam uma balada.
+  Um jogo de investigação e gerenciamento de entrada ambientado em uma balada dos anos 1950. Identifique os alienígenas disfarçados de humanos antes que eles invadam a festa.
 </p>
 
 ---
 
 ## 📖 Sobre o Projeto
 
-**Aliens Gamejam** é um jogo desenvolvido utilizando GameMaker, no qual o jogador assume o papel de responsável pelo controle de entrada de uma balada em um cenário onde alienígenas estão tentando se infiltrar entre os humanos.
+**Aliens Gamejam** é desenvolvido em GameMaker. O jogador trabalha na segurança de uma balada em 1956 e precisa descobrir quais visitantes são alienígenas disfarçados.
 
-Durante cada dia, diferentes visitantes aparecem para serem interrogados. Por meio de conversas e informações apresentadas durante a inspeção, o jogador precisa decidir se deve liberar ou expulsar cada pessoa.
+Antes da primeira partida, o agente especial Leftoff apresenta a ameaça em uma introdução cinematográfica. Em cada dia, visitantes aparecem para conversar e apresentar seus documentos. O jogador analisa as pistas e decide quem pode entrar.
 
-Entretanto, nem todas as decisões são simples: liberar um alienígena permite que ele entre na balada, enquanto expulsar uma pessoa inocente gera penalidades.
+Os alienígenas que entram precisam ser identificados e expulsos na pista de dança. A pontuação, os erros e as vidas determinam a progressão da partida.
 
-Ao final do expediente, os alienígenas que conseguiram entrar precisam ser identificados e expulsos antes que escapem. Cada ameaça não neutralizada representa a perda de uma vida.
-
-O objetivo é sobreviver ao maior número possível de dias, tomar decisões corretas e impedir uma invasão alienígena.
+O objetivo é manter a festa segura, sobreviver aos dias e alcançar 1.000 pontos.
 
 ---
 
@@ -43,6 +37,7 @@ O objetivo é sobreviver ao maior número possível de dias, tomar decisões cor
 - [Sobre o Projeto](#-sobre-o-projeto)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [Como Jogar](#-como-jogar)
+- [Atualizações](#-atualizações)
 - [Screenshots](#-screenshots)
 - [Equipe](#-equipe-do-projeto)
 - [Game Jam](#-game-jam)
@@ -69,30 +64,49 @@ O objetivo é sobreviver ao maior número possível de dias, tomar decisões cor
 
 ## ☕ Como Jogar
 
-### 👥 Inspeção de visitantes
+### Introdução
 
-A cada dia, um grupo de visitantes aparece na cabine de inspeção. Observe os personagens e acompanhe seus diálogos para identificar possíveis alienígenas infiltrados.
+O agente Leftoff explica a ameaça antes da primeira partida. As falas são apresentadas gradualmente; clique ou toque para completar uma fala e avançar. A introdução também pode ser pulada.
 
-### ✅ Liberar ou expulsar
+### Cabine de segurança
 
-Após a conversa, escolha entre duas ações:
+Observe cada visitante, leia o diálogo e clique nos documentos para examiná-los. Depois, escolha:
 
-- **Liberar:** permite que o visitante entre na balada.
-- **Expulsar:** impede a entrada do visitante.
+- **Admit:** deixa o visitante entrar na festa.
+- **Reject:** impede a entrada.
 
-Cada decisão influencia sua pontuação e o andamento da partida. Liberar um alienígena ou expulsar um humano gera penalidades.
+O documento ampliado mostra o retrato, o nome, a idade e o SSN do visitante. Use as conversas e os dados para distinguir alienígenas de humanos.
 
-### 🪩 Controle da balada
+### Balada
 
-Quando alienígenas conseguem entrar, o jogador precisa identificá-los e expulsá-los antes que escapem.
+Se alienígenas entrarem, selecione os suspeitos na pista e expulse-os. Cada alienígena que permanecer na festa pode custar uma vida.
 
-### ❤️ Sistema de vidas
+### Pontuação e progressão
 
-Os alienígenas que não forem neutralizados representam vidas perdidas. Se todas as vidas acabarem, a partida termina.
+- Decisões corretas aumentam a pontuação; decisões incorretas podem reduzi-la.
+- Expulsar um humano sem convite é uma decisão correta e rende pontos.
+- Se nenhum alienígena entrar, o jogador pode avançar diretamente para o próximo dia.
+- Se aliens entrarem, é preciso lidar com eles na balada antes de continuar.
+- A partida termina se as vidas acabarem. Alcançar 1.000 pontos conclui a campanha com vitória.
 
-### 📅 Progressão
+Os visitantes são selecionados pelo sistema de distribuição diária. Alguns aparecem a partir de um dia específico e podem voltar a ser sorteados nos dias seguintes, sem serem obrigatórios todos os dias.
 
-Sobreviva aos dias, administre suas decisões e tente manter a balada livre de alienígenas pelo maior tempo possível.
+Os controles de clique também aceitam toque em dispositivos Android.
+
+---
+
+## 🛠️ Atualizações
+
+- Corrigido o espaçamento das descrições de visitantes para permitir uma ou duas linhas dentro do painel.
+- Corrigida a disponibilidade de visitantes com dia de estreia, para que continuem elegíveis em dias posteriores.
+- Ajustado o mapeamento de sprites de reação dos NPCs.
+- Corrigida a pontuação para expulsar humanos sem convite.
+- Adicionada a introdução do agente Leftoff, com diálogo gradual, avanço por clique/toque e opção de pular.
+- Organizados o ID ampliado, o retrato e os dados de identificação; aumentada a legibilidade do documento.
+- Padronizados os SSNs fictícios no formato visual `###-##-####`, mantendo um número repetido como pista alienígena da Marta.
+- Desativada a prancheta da cabine e reposicionados os documentos sobre a mesa.
+- Atualizadas as telas de resultado do turno, da balada, de game over e de vitória, mantendo o fluxo entre as etapas.
+- Corrigida a sobreposição do relatório do turno sobre a tela de vitória.
 
 ---
 
@@ -100,18 +114,45 @@ Sobreviva aos dias, administre suas decisões e tente manter a balada livre de a
 
 <div align="center">
 
-<img src="prints/home.png" width="800" alt="Menu inicial">
+<figure>
+  <img src="prints/introducao.png" width="800" alt="Introdução cinematográfica do agente Leftoff">
+  <figcaption>O agente especial Leftoff apresenta a ameaça alienígena.</figcaption>
+</figure>
 
-<img src="prints/luciogoat.png" width="800" alt="Inspeção de visitantes">
+<figure>
+  <img src="prints/cabine.png" width="800" alt="Visitante sendo inspecionado na cabine">
+  <figcaption>Inspeção de visitantes na cabine de segurança.</figcaption>
+</figure>
 
-<img src="prints/idetalhado.png" width="800" alt="Documento de identificação">
+<figure>
+  <img src="prints/bettygoatid.png" width="800" alt="Documento ampliado com retrato e dados do visitante">
+  <figcaption>Documento ampliado com retrato e informações de identificação.</figcaption>
+</figure>
 
-<img src="prints/baladawow.png" width="800" alt="Visão da balada">
+<figure>
+  <img src="prints/convite.png" width="800" alt="Convite e decisões da cabine">
+  <figcaption>Convite e decisões de entrada.</figcaption>
+</figure>
 
-<img src="prints/balada.png" width="800" alt="Interior da balada">
+<figure>
+  <img src="prints/detalhebalada.png" width="800" alt="Seleção de visitantes suspeitos na balada">
+  <figcaption>Identificação de suspeitos na pista de dança.</figcaption>
+</figure>
 
-<img src="prints/gameover.png" width="800" alt="Tela de Game Over">
+<figure>
+  <img src="prints/balada.png" width="800" alt="Pista de dança e visitantes">
+  <figcaption>A balada e seus visitantes.</figcaption>
+</figure>
 
+<figure>
+  <img src="prints/gameover.png" width="800" alt="Relatório de fim de jogo">
+  <figcaption>Relatório de game over.</figcaption>
+</figure>
+
+<figure>
+  <img src="prints/1000points.png" width="800" alt="Tela de vitória ao alcançar mil pontos">
+  <figcaption>Vitória ao alcançar 1.000 pontos.</figcaption>
+</figure>
 </div>
 
 ---
