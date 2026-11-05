@@ -9,7 +9,7 @@ if (!variable_global_exists("vidas")) {
 }
 global.selecionado = noone
 global.pontuacao = 0
-function Pessoa(_nome, _idade, _cpf, _corpo, _cabeca, _convite,  _alien, _revelacao, _comportamento) constructor{
+function Pessoa(_nome, _idade, _cpf, _corpo, _cabeca, _convite, _fotoConvite,  _alien, _revelacao, _comportamento) constructor{
     nome = _nome
     idade = _idade
     cpf = _cpf
@@ -17,6 +17,7 @@ function Pessoa(_nome, _idade, _cpf, _corpo, _cabeca, _convite,  _alien, _revela
     corpo_original = _corpo
     cabeca = _cabeca
     convite = _convite
+	fotoConvite = _fotoConvite
     alien = _alien
     revelacao = _revelacao
     comportamento = _comportamento

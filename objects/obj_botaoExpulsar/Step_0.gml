@@ -6,8 +6,8 @@ if (instance_exists(_controlador) && _controlador.venceu) exit;
 if (!visible) exit;
 
 if (_emcima) {
-    image_xscale = 0.72;
-    image_yscale = 0.29;
+    image_xscale = 0.8;
+    image_yscale = 0.35;
 
     if (_clicou) {
 
@@ -61,8 +61,8 @@ if (_emcima) {
     }
 }
 else {
-    image_xscale = 0.66;
-    image_yscale = 0.25;
+    image_xscale = 0.7;
+    image_yscale = 0.3;
 }
 
 // Depuração

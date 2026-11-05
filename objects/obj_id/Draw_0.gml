@@ -1,4 +1,6 @@
 
+var _escala = 1.6
+
 //fundo escuro
 if(escuro > 0.01){
     draw_set_alpha(escuro)
@@ -15,22 +17,20 @@ if(ampliar && image_xscale > escala * 0.6){
 
     if (dono == undefined) exit
 
-    // Center the identity details and portrait within their document panels.
     if (sprite_exists(dono.cabeca)) {
-        draw_sprite_ext(dono.cabeca, 0, x + 117, y - 18, 0.07, 0.07, 0, c_white, 1)
+        draw_sprite_ext(dono.cabeca, 0, x + 160, y - 60, 0.14, 0.14, 0, c_white, 1)
     }
 
     draw_set_alpha(1)
     draw_set_color(c_black)
     draw_set_font(fnt_marketdeco)
-    draw_set_halign(fa_center)
     draw_set_valign(fa_middle)
+	draw_set_halign(fa_left)
 
-    draw_text_transformed(x - 118, y - 50, "NAME: " + string_upper(dono.nome), 0.8, 0.8, 0)
-    draw_text_transformed(x - 118, y - 5, "AGE: " + string(dono.idade), 0.8, 0.8, 0)
-    draw_text_transformed(x - 118, y + 40, "SSN: " + dono.cpf, 0.8, 0.8, 0)
+    draw_text_transformed(x - 280, y - 150, "NAME: " + string_upper(dono.nome),  _escala, _escala, 0)
+    draw_text_transformed(x - 280, y - 90, "AGE: " + string(dono.idade), _escala, _escala, 0)
+    draw_text_transformed(x - 280, y - 30, "SSN: " + dono.cpf, _escala, _escala, 0)
 
-    draw_set_halign(fa_left)
     draw_set_valign(fa_top)
     draw_set_color(c_white)
 }
